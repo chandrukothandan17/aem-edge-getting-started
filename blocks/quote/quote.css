@@ -1,14 +1,19 @@
+.quote-wrapper{
+    max-width:600px !important;
+}
 .block.quote {
-    background-color: #ccc;
+    background-color: #192672;
     padding: 0 0 24px;
     display: flex;
     flex-direction: column;
     margin: 1rem 0;
+    border-radius:10px;
 }
 
 .block.quote blockquote {
     margin: 16px;
     text-indent: 0;
+    color:white;
 }
 
 .block.quote > div:last-child > div {
@@ -18,13 +23,18 @@
     position: relative;
 }
 
-.block.quote > div:last-child > div::after {
+.block.quote p{
+    color:#dddde7;
+    text-align: right;
+}
+
+.block.quote > div:first-child > div::after {
     content: "";
     display: block;
     position: absolute;
     left: 0;
     bottom: -8px;
-    height: 5px;
-    width: 30px;
-    background-color: darkgray;
+    height: 1px;
+    width: 570px;
+    background-color: #dddee7;
 }
