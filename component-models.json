@@ -606,11 +606,12 @@
         "valueType": "string"
       },
       {
-        "component": "text",
-        "name": "start-date",
-        "value": "",
-        "label": "Start Date",
-        "valueType": "date-input"
+        "component": "date-time",
+        "name": "startDate",
+        "label": "Start date",
+        "valueType": "date",
+        "description": "Minimum date allowed in the field",
+        "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.000-00:00"
       }
     ]
   }
