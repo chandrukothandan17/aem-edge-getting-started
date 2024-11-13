@@ -592,31 +592,24 @@
         "label": "Summary"
       },
       {
-        "component": "multiline-input",
-        "name": "impacted-area",
-        "label": "Impacted Area",
-        "collapsible": true,
+        "id": "multiline-input",
         "fields": [
           {
-            "component": "text",
-            "name": "impact-state",
-            "label": "Impact State",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "name": "impact-postcode",
-            "label": "Impact PostCode",
-            "valueType": "string"
-          },
-          {
-            "component": "boolean",
-            "name": "multiLine",
-            "label": "Allow multiple lines",
-            "valueType": "boolean"
+            "component": "container",
+            "name": "basic",
+            "label": "Basic",
+            "collapsible": false,
+            "fields": [
+              {
+                "component": "boolean",
+                "name": "multiLine",
+                "label": "Allow multiple lines",
+                "valueType": "boolean"
+              }
+            ]
           }
-        ]
-      },
+    ]
+   },
       {
         "component": "richtext",
         "name": "description",
