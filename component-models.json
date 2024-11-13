@@ -592,33 +592,28 @@
         "label": "Summary"
       },
       {
-        "id": "multiline-input",
+        "component": "multiline-input",
+        "name": "impacted-area",
+        "label": "Impacted Area",
+        "collapsible": true,
         "fields": [
           {
-            "component": "container",
-            "name": "impacted-area",
-            "label": "Impacted Area",
-            "collapsible": true,
-            "fields": [
-              {
-                "component": "text",
-                "name": "impact-state",
-                "label": "Impact State",
-                "valueType": "string"
-              },
-              {
-                "component": "text",
-                "name": "impact-postcode",
-                "label": "Impact PostCode",
-                "valueType": "string"
-              },
-              {
-                "component": "boolean",
-                "name": "multiLine",
-                "label": "Allow multiple lines",
-                "valueType": "boolean"
-              }
-            ]
+            "component": "text",
+            "name": "impact-state",
+            "label": "Impact State",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "name": "impact-postcode",
+            "label": "Impact PostCode",
+            "valueType": "string"
+          },
+          {
+            "component": "boolean",
+            "name": "multiLine",
+            "label": "Allow multiple lines",
+            "valueType": "boolean"
           }
         ]
       },
