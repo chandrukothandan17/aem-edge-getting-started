@@ -610,7 +610,7 @@
         "name": "start-date",
         "value": "",
         "label": "Start Date",
-        "valueType": "date"
+        "valueType": "date-input"
       }
     ]
   }
