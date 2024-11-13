@@ -597,6 +597,13 @@
         "value": "",
         "label": "Impacted Area",
         "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
       }
     ]
   }
