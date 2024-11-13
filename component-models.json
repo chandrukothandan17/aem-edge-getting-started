@@ -592,24 +592,12 @@
         "label": "Summary"
       },
       {
-        "id": "multiline-input",
-        "fields": [
-          {
-            "component": "container",
-            "name": "basic",
-            "label": "Basic",
-            "collapsible": false,
-            "fields": [
-              {
-                "component": "boolean",
-                "name": "multiLine",
-                "label": "Allow multiple lines",
-                "valueType": "boolean"
-              }
-            ]
-          }
-    ]
-   },
+        "component": "checkbox",
+        "name": "checkbox",
+        "value": "",
+        "label": "Checkbox",
+        "valueType": "boolean"
+     },
       {
         "component": "richtext",
         "name": "description",
