@@ -568,5 +568,36 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "service-alert",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "alert-number",
+        "value": "",
+        "label": "Alert Number"
+      }
+    ]
+  },
+  {
+    "id": "service-alert-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "summary",
+        "value": "",
+        "label": "Summary"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Impacted Area",
+        "valueType": "string"
+      }
+    ]
   }
 ]
