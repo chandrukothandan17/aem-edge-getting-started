@@ -604,6 +604,13 @@
         "value": "",
         "label": "Description",
         "valueType": "string"
+      },
+      {
+        "component": "text",
+        "name": "start-date",
+        "value": "",
+        "label": "Start Date",
+        "valueType": "date"
       }
     ]
   }
