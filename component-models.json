@@ -582,25 +582,6 @@
     ]
   },
   {
-    "id": "impact-item",
-    "fields" :[
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "summary1",
-        "value": "",
-        "label": "Summary One"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "summary 2",
-        "value": "",
-        "label": "Summary Two"
-      }
-    ]
-  },
-  {
     "id": "service-alert-item",
     "fields": [
       {
@@ -611,12 +592,28 @@
         "label": "Summary"
       },
       {
-        "component": "impact-item",
+        "component": "text",
         "valueType": "string",
         "name": "impact-area",
         "value": "",
         "label": "Impact Area",
-        "multi" :true
+        "multi" :true,
+        "fields":[
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "summary1",
+            "value": "",
+            "label": "Summary one"
+          },
+          {
+            "component": "text",
+            "valueType": "string",
+            "name": "summary1",
+            "value": "",
+            "label": "Summary two"
+          }
+        ]
       },
       {
         "component": "richtext",
