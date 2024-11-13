@@ -444,6 +444,21 @@
               }
             }
           }
+        },
+        {
+          "title":"Impact item",
+          "id" :"impact-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Impact Alert Item",
+                  "model": "impact-item"
+                }
+              }
+            }
+          }
         }
       ]
     }
