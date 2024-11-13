@@ -592,11 +592,35 @@
         "label": "Summary"
       },
       {
-        "component": "richtext",
-        "name": "impacted-area",
-        "value": "",
-        "label": "Impacted Area",
-        "valueType": "string"
+        "id": "multiline-input",
+        "fields": [
+          {
+            "component": "container",
+            "name": "impacted-area",
+            "label": "Impacted Area",
+            "collapsible": true,
+            "fields": [
+              {
+                "component": "text",
+                "name": "impact-state",
+                "label": "Impact State",
+                "valueType": "string"
+              },
+              {
+                "component": "text",
+                "name": "impact-postcode",
+                "label": "Impact PostCode",
+                "valueType": "string"
+              },
+              {
+                "component": "boolean",
+                "name": "multiLine",
+                "label": "Allow multiple lines",
+                "valueType": "boolean"
+              }
+            ]
+          }
+        ]
       },
       {
         "component": "richtext",
@@ -610,15 +634,15 @@
         "name": "startDate",
         "label": "Start date",
         "valueType": "date-time",
-        "description": "Minimum date allowed in the field",
+        "description": "Select the Start date for the Alert",
         "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.000-00:00"
       },
       {
         "component": "date-time",
-        "name": "startDate",
-        "label": "Start date",
+        "name": "endDate",
+        "label": "End date",
         "valueType": "date-time",
-        "description": "Minimum date allowed in the field",
+        "description": "Select the End date for the Alert",
         "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.000-00:00"
       }
     ]
