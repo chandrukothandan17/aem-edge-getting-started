@@ -62,7 +62,7 @@
         "valueType": "string",
         "name": "fileReference",
         "label": "Image",
-        "multi": true
+        "multi": false
       },
       {
         "component": "text",
@@ -592,12 +592,13 @@
         "label": "Summary"
       },
       {
-        "component": "checkbox",
-        "name": "checkbox",
+        "component": "text",
+        "valueType": "string",
+        "name": "impact-area",
         "value": "",
-        "label": "Checkbox",
-        "valueType": "boolean"
-     },
+        "label": "Impact Area",
+        "multi" :true
+      },
       {
         "component": "richtext",
         "name": "description",
