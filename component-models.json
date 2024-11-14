@@ -589,10 +589,10 @@
         "valueType": "string",
         "name": "summary",
         "value": "",
-        "label": "Summary one"
+        "label": "Summary"
       },
       {
-        "component": "text",
+        "component": "multifield",
         "valueType": "string",
         "name": "impact-area",
         "value": "",
