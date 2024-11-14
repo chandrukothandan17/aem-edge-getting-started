@@ -595,6 +595,7 @@
   },
   {
     "id": "service-alert-item",
+    "multi":true,
     "fields": [
       {
         "component": "text",
