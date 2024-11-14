@@ -444,6 +444,21 @@
               }
             }
           }
+        },
+        {
+          "title": "Custom Block",
+          "id": "custom-block",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "block/customblock",
+                "template": {
+                  "name": "Custom block",
+                  "model": "custom-block"
+                }
+              }
+            }
+          }
         }
       ]
     }

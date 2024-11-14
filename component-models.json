@@ -593,7 +593,7 @@
       },
       {
         "component": "multifield",
-        "valueType": "string",
+        "valueType": "object",
         "name": "impact-area",
         "value": "",
         "label": "Impact Area",
@@ -638,6 +638,18 @@
         "description": "Select the End date for the Alert",
         "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.000-00:00"
       }
+    ]
+  },
+  {
+    "id":"custom-block",
+    "fields":[
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "summary1",
+          "value": "",
+          "label": "Summary two"
+        }
     ]
   },
   {
