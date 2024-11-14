@@ -28,7 +28,7 @@ export default function decorate(block) {
 
   const searchPath = '/blocks/accordion';
   console.log("searchPath"+searchPath);
-  console.log("code "+${window.hlx.codeBasePath});
+  console.log("code "+window.hlx.codeBasePath);
   const resp = await fetch(`${window.hlx.codeBasePath}${searchPath}/accordion.html`, {
     signal: AbortSignal.timeout(FETCH_TIMEOUTS.default),
   });
