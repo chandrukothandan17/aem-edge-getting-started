@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section"]
+    "components": ["section","custom-block"]
   },
   {
     "id": "columns",
@@ -30,8 +30,7 @@
       "fragment",
       "embed",
       "quote",
-      "service-alert",
-      "custom-block"
+      "service-alert"
     ]
   },
   {

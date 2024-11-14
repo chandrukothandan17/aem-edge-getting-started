@@ -73,6 +73,24 @@
       ]
     },
     {
+      "title": "Custom Blocks",
+      "id": "custom-blocks",
+      "components": [
+        {
+          "title": "Custom Block",
+          "id": "custom-block",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "block/customblock",
+                "template": {}
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
       "title": "Blocks",
       "id": "blocks",
       "components": [
