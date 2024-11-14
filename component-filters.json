@@ -30,7 +30,8 @@
       "fragment",
       "embed",
       "quote",
-      "service-alert"
+      "service-alert",
+      "app-injector"
     ]
   },
   {
