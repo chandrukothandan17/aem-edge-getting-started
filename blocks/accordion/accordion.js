@@ -6,6 +6,8 @@
 
 import { moveInstrumentation } from '../../scripts/scripts.js';
 
+import { FETCH_TIMEOUTS } from '../../scripts/utils.js';
+
 export default function decorate(block) {
   [...block.children].forEach((row) => {
     // decorate accordion item label
@@ -26,6 +28,7 @@ export default function decorate(block) {
 
   const searchPath = '/blocks/accordion';
   console.log("searchPath"+searchPath);
+  console.log("code "+${window.hlx.codeBasePath});
   const resp = await fetch(`${window.hlx.codeBasePath}${searchPath}/accordion.html`, {
     signal: AbortSignal.timeout(FETCH_TIMEOUTS.default),
   });
