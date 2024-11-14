@@ -595,7 +595,6 @@
   },
   {
     "id": "service-alert-item",
-    "multi":true,
     "fields": [
       {
         "component": "text",
@@ -605,10 +604,9 @@
         "label": "Summary"
       },
       {
-        "component": "multifield",
-        "valueType": "object",
+        "component": "section",
+        "valueType": "section",
         "name": "impact-area",
-        "value": "",
         "label": "Impact Area",
         "multi" :true,
         "fields":[
