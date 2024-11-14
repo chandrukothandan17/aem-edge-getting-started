@@ -31,7 +31,8 @@
       "embed",
       "quote",
       "service-alert",
-      "app-injector"
+      "app-injector",
+      "container"
     ]
   },
   {
