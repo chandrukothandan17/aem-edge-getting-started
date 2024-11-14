@@ -599,7 +599,7 @@
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
+        "name": "reference",
         "label": "Reference",
         "multi": false
       },
