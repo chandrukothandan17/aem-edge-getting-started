@@ -50,7 +50,7 @@ export default async function decorate(block) {
   link.rel = 'stylesheet';
   link.href = '/assets/resources/webcontent/applications/trackingsupport/assets/index-380450bb.css';
 
-  document.head.append(script).append(link);
+  document.head.append(scrpt).append(link);
 
 }
 
