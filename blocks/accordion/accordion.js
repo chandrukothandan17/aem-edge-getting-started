@@ -36,12 +36,13 @@ export default async function decorate(block) {
   const searchMarkup = await resp.text();
   console.log(searchMarkup);
   const searchDom = await rewriteWdigetDom(searchMarkup);
+  const scriptlist = await rewriteWdigetDomhead(searchMarkup);
   const accwrapper = document.getElementsByClassName('accordion-wrapper');
   console.log(accwrapper.length);
   console.log(accwrapper);
   accwrapper[0].append(searchDom);
   
-
+  document.head.append(scriptlist);
 
 
 }
@@ -56,5 +57,18 @@ async function rewriteWdigetDom(markup) {
 
   const fragment = document.createDocumentFragment();
   [...doc.body.children].forEach((child) => fragment.append(child));
+  return fragment;
+}
+
+async function rewriteWdigetDomhead(markup) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(markup, 'text/html');
+
+  decorateIcons(doc);
+
+  await replacePlaceholders(doc);
+
+  const fragment = document.createDocumentFragment();
+  [...doc.head.children].forEach((child) => fragment.append(child));
   return fragment;
 }
