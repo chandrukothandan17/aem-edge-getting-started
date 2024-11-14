@@ -49,8 +49,8 @@ export default async function decorate(block) {
   const link = document.createElement('link');
   link.rel = 'stylesheet';
   link.href = '/assets/resources/webcontent/applications/trackingsupport/assets/index-380450bb.css';
-  
-  document.head.append(script);
+
+  document.head.append(scrpt);
   docuemnt.head.append(link);
 }
 
