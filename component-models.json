@@ -597,10 +597,9 @@
     "id": "app-injector",
     "fields": [
       {
-        "component": "file-input",
-        "valueType": "file",
-        "name": "file-input",
-        "label": "File Input"
+        "component": "aem-content",
+        "name": "reference",
+        "label": "Reference"
       },
       {
         "component": "text",
