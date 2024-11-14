@@ -5,6 +5,8 @@
  */
 
 import { moveInstrumentation } from '../../scripts/scripts.js';
+import { decorateIcons } from '../../scripts/aem.js';
+import { rewriteWdigetDom, FETCH_TIMEOUTS } from '../../scripts/utils.js';
 
 export default async function decorate(block) {
   [...block.children].forEach((row) => {
@@ -27,13 +29,29 @@ export default async function decorate(block) {
   const searchPath = '/blocks/accordion';
   console.log("searchPath"+searchPath);
   console.log("code "+window.hlx.codeBasePath);
-  const resp = await fetch(`${window.hlx.codeBasePath}${searchPath}/accordion.html`);
+  const resp = await fetch(`${window.hlx.codeBasePath}${searchPath}/accordion.html`, {
+    signal: AbortSignal.timeout(FETCH_TIMEOUTS.default),
+  });
 
   const searchMarkup = await resp.text();
   console.log(searchMarkup);
+  const searchDom = await rewriteWdigetDom(searchMarkup);
   const accwrapper = document.getElementsByClassName('accordion-wrapper');
   console.log(accwrapper.length);
   console.log(accwrapper);
-  accwrapper[0].append(searchMarkup);
+  accwrapper[0].append(searchDom);
 
+}
+
+async function rewriteWdigetDom(markup) {
+  const parser = new DOMParser();
+  const doc = parser.parseFromString(markup, 'text/html');
+
+  decorateIcons(doc);
+
+  await replacePlaceholders(doc);
+
+  const fragment = document.createDocumentFragment();
+  [...doc.body.children].forEach((child) => fragment.append(child));
+  return fragment;
 }
