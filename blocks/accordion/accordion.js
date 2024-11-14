@@ -30,10 +30,13 @@ export default async function decorate(block) {
   const resp = await fetch(`${window.hlx.codeBasePath}${searchPath}/accordion.html`);
 
   const searchMarkup = await resp.text();
-  const searchDom = await rewriteWdigetDom(searchMarkup);
+  console.log(searchMarkup);
+
+
+  //const searchDom = await rewriteWdigetDom(searchMarkup);
   const accwrapper = document.getElementsByClassName('accordion-wrapper');
   console.log(accwrapper.length);
   console.log(accwrapper);
-  accwrapper[0].append(searchDom);
+ // accwrapper[0].append(searchDom);
 
 }
