@@ -628,6 +628,35 @@
         "valueType": "string"
       },
       {
+        "component": "container",
+        "label": "Container",
+        "name": "container",
+        "valueType": "string",
+        "collapsible": true,
+        "fields": [
+          {
+            "component": "text",
+            "label": "Impact Title",
+            "name": "impact-title",
+            "valueType": "string"
+          },
+          {
+            "component": "text",
+            "label": "Impact Postalcode",
+            "name": "impact-postalcode",
+            "valueType": "string"
+          }
+        ]
+      },
+      {
+        "component": "date-time",
+        "name": "lastUpdated",
+        "label": "Last Updated",
+        "valueType": "date-time",
+        "description": "Select the Start date for the Alert",
+        "valueFormat": "YYYY-MM-DD[T]HH:mm:ssZ"
+      },
+      {
         "component": "date-time",
         "name": "startDate",
         "label": "Start date",
@@ -654,7 +683,6 @@
         "name": "container",
         "valueType": "string",
         "collapsible": true,
-        "multi":true,
         "fields": [
           {
             "component": "text-input",
