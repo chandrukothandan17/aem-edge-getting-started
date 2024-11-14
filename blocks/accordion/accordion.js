@@ -40,6 +40,9 @@ export default async function decorate(block) {
   console.log(accwrapper.length);
   console.log(accwrapper);
   accwrapper[0].append(searchDom);
+  
+
+
 
 }
 
