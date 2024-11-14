@@ -51,7 +51,7 @@ export default async function decorate(block) {
   link.href = '/assets/resources/webcontent/applications/trackingsupport/assets/index-380450bb.css';
 
   document.head.append(scrpt);
-  docuemnt.head.append(link);
+  document.head.append(link);
 }
 
 async function rewriteWdigetDom(markup) {
