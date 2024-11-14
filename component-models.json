@@ -597,7 +597,7 @@
     "id": "app-injector",
     "fields": [
       {
-        "component": "path-picker",
+        "component": "file-input",
         "valueType": "string",
         "name": "filename",
         "value": "",
