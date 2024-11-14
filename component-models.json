@@ -600,7 +600,7 @@
         "component": "reference",
         "valueType": "string",
         "name": "image",
-        "label": "Image",
+        "label": "Reference",
         "multi": false
       },
       {
