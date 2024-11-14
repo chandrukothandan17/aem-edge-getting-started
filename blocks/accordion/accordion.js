@@ -8,7 +8,7 @@ import { moveInstrumentation } from '../../scripts/scripts.js';
 
 import { FETCH_TIMEOUTS } from '../../scripts/utils.js';
 
-export async default function decorate(block) {
+export default async function decorate(block) {
   [...block.children].forEach((row) => {
     // decorate accordion item label
     const label = row.children[0];
