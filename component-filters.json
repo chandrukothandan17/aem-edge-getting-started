@@ -40,6 +40,13 @@
     "components": ["card"]
   },
   {
+    "id": "service-alert",
+    "components": [
+      "service-alert-item",
+      "impact-list"
+    ]
+  },
+  {
     "id": "accordion",
     "components": [
       "accordion-item"
