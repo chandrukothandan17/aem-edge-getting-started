@@ -26,6 +26,17 @@ import {
     });
   }
 
+  export async function fetchLocalePlaceholders() {
+    let localePath;
+    if (/^\/[a-z]{2}\/[a-z]{2}\//.test(window.location.pathname)) {
+      localePath = window.location.pathname.substring(0, 6);
+    } else {
+      localePath = '/us/en';
+    }
+  
+    return fetchPlaceholders(localePath);
+  }
+
   export function getPlaceholderString(keyText, placeholders) {
     const key = toCamelCase(keyText);
     if (key in placeholders && placeholders[key]) return placeholders[key];
