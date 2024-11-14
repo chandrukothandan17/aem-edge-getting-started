@@ -639,7 +639,7 @@
         "label": "Start date",
         "valueType": "date-time",
         "description": "Select the Start date for the Alert",
-        "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.000-00:00"
+        "valueFormat": "YYYY-MM-DD[T]HH:mm:ssZ"
       },
       {
         "component": "date-time",
@@ -647,7 +647,7 @@
         "label": "End date",
         "valueType": "date-time",
         "description": "Select the End date for the Alert",
-        "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.000-00:00"
+        "valueFormat": "YYYY-MM-DD[T]HH:mm:ssZ"
       }
     ]
   }
