@@ -6,7 +6,7 @@
 
 import { moveInstrumentation } from '../../scripts/scripts.js';
 import { decorateIcons } from '../../scripts/aem.js';
-import { rewriteWdigetDom, FETCH_TIMEOUTS } from '../../scripts/utils.js';
+import { replacePlaceholders, FETCH_TIMEOUTS } from '../../scripts/utils.js';
 
 export default async function decorate(block) {
   [...block.children].forEach((row) => {
