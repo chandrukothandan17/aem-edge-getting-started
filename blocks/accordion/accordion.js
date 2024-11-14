@@ -36,14 +36,21 @@ export default async function decorate(block) {
   const searchMarkup = await resp.text();
   console.log(searchMarkup);
   const searchDom = await rewriteWdigetDom(searchMarkup);
-  const scriptlist = await rewriteWdigetDomhead(searchMarkup);
   const accwrapper = document.getElementsByClassName('accordion-wrapper');
   console.log(accwrapper.length);
   console.log(accwrapper);
   accwrapper[0].append(searchDom);
-  
-  document.head.append(scriptlist);
 
+  const scrpt = document.createElement('script');
+  scrpt.type = 'module';
+  scrpt.crossorigin = true;
+  scrpt.href = '/assets/resources/webcontent/applications/trackingsupport/assets/index-154874fe.js';
+
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = '/assets/resources/webcontent/applications/trackingsupport/assets/index-380450bb.css';
+
+  document.head.append(script).append(link);
 
 }
 
@@ -60,15 +67,3 @@ async function rewriteWdigetDom(markup) {
   return fragment;
 }
 
-async function rewriteWdigetDomhead(markup) {
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(markup, 'text/html');
-
-  decorateIcons(doc);
-
-  await replacePlaceholders(doc);
-
-  const fragment = document.createDocumentFragment();
-  [...doc.head.children].forEach((child) => fragment.append(child));
-  return fragment;
-}
