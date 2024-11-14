@@ -628,27 +628,6 @@
         "valueType": "string"
       },
       {
-        "component": "container",
-        "label": "Container",
-        "name": "container",
-        "valueType": "string",
-        "collapsible": true,
-        "fields": [
-          {
-            "component": "text",
-            "label": "Impact Title",
-            "name": "impact-title",
-            "valueType": "string"
-          },
-          {
-            "component": "text",
-            "label": "Impact Postalcode",
-            "name": "impact-postalcode",
-            "valueType": "string"
-          }
-        ]
-      },
-      {
         "component": "date-time",
         "name": "lastUpdated",
         "label": "Last Updated",
@@ -685,15 +664,15 @@
         "collapsible": true,
         "fields": [
           {
-            "component": "text-input",
-            "label": "Simple Text 1",
-            "name": "text",
+            "component": "text",
+            "label": "Impact Title",
+            "name": "impact-title",
             "valueType": "string"
           },
           {
-            "component": "text-input",
-            "label": "Simple Text 2",
-            "name": "text2",
+            "component": "text",
+            "label": "Impact Postalcode",
+            "name": "impact-postalcode",
             "valueType": "string"
           }
         ]
