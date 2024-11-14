@@ -479,15 +479,15 @@
           }
         },
         {
-          "title": "Container",
-          "id": "container",
+          "title": "Impact List",
+          "id": "impact-list",
           "plugins": {
             "xwalk": {
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Container",
-                  "model": "container"
+                  "name": "Impact List",
+                  "model": "impact-list"
                 }
               }
             }
