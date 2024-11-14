@@ -44,7 +44,7 @@ export default async function decorate(block) {
   const scrpt = document.createElement('script');
   scrpt.type = 'module';
   scrpt.crossorigin = true;
-  scrpt.href = '/assets/resources/webcontent/applications/trackingsupport/assets/index-154874fe.js';
+  scrpt.src = '/assets/resources/webcontent/applications/trackingsupport/assets/index-154874fe.js';
 
   const link = document.createElement('link');
   link.rel = 'stylesheet';
