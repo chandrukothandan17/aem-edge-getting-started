@@ -594,6 +594,18 @@
     ]
   },
   {
+    "id": "app-injector",
+    "fields": [
+      {
+        "component": "path-picker",
+        "valueType": "string",
+        "name": "filename",
+        "value": "",
+        "label": "File Number"
+      }
+    ]
+  },
+  {
     "id": "service-alert-item",
     "fields": [
       {
