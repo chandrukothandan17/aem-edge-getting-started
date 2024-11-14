@@ -40,9 +40,8 @@
     "components": ["card"]
   },
   {
-    "id": "service-alert",
+    "id": "service-alert-item",
     "components": [
-      "service-alert-item",
       "impact-list"
     ]
   },
