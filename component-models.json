@@ -650,22 +650,20 @@
     "fields": [
       {
         "component": "container",
-        "label": "Container",
-        "name": "container",
-        "valueType": "string",
+        "name": "help",
+        "label": "Help Content",
         "collapsible": true,
-        "multi":true,
         "fields": [
           {
-            "component": "text-input",
-            "label": "Simple Text 1",
-            "name": "text",
+            "component": "richtext",
+            "name": "description",
+            "label": "Help text",
             "valueType": "string"
           },
           {
-            "component": "text-input",
-            "label": "Simple Text 2",
-            "name": "text2",
+            "component": "richtext",
+            "name": "tooltip",
+            "label": "Short description",
             "valueType": "string"
           }
         ]
