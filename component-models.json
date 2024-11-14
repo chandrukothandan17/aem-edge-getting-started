@@ -597,11 +597,10 @@
     "id": "app-injector",
     "fields": [
       {
-        "component": "reference",
-        "valueType": "string",
-        "name": "reference",
-        "label": "Reference",
-        "multi": false
+        "component": "file-input",
+        "valueType": "file",
+        "name": "file-input",
+        "label": "File Input"
       },
       {
         "component": "text",
