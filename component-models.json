@@ -589,7 +589,7 @@
         "valueType": "string",
         "name": "summary",
         "value": "",
-        "label": "Summary"
+        "label": "Summary one"
       },
       {
         "component": "text",
