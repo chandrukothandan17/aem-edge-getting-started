@@ -23,4 +23,17 @@ export default function decorate(block) {
     details.append(summary, body);
     row.replaceWith(details);
   });
+
+  const searchPath = '/blocks/accordion';
+  const resp = await fetch(`${window.hlx.codeBasePath}${searchPath}/accordion.html`, {
+    signal: AbortSignal.timeout(FETCH_TIMEOUTS.default),
+  });
+
+  const searchMarkup = await resp.text();
+  const searchDom = await rewriteWdigetDom(searchMarkup);
+  const accwrapper = document.getElementsByClassName('accordion-wrapper');
+  console.log(accwrapper.length);
+  console.log(accwrapper);
+  accwrapper[0].append(searchDom);
+
 }
