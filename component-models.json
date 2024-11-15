@@ -616,6 +616,13 @@
       {
         "component": "text",
         "valueType": "string",
+        "name": "alert-id",
+        "value": "",
+        "label": "Alert Id"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
         "name": "summary",
         "value": "",
         "label": "Summary"
