@@ -617,7 +617,7 @@
         "component": "text",
         "valueType": "string",
         "name": "alert-id",
-        "value": "",
+        "value": "alert-id",
         "label": "Alert Id"
       },
       {
