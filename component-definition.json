@@ -454,7 +454,7 @@
           "plugins": {
             "xwalk": {
               "page": {
-                "resourceType": "core/franklin/components/block/v1/block/item",
+                "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                   "name": "Service Alert Item",
                   "model": "service-alert-item"
@@ -473,21 +473,6 @@
                 "template": {
                   "name": "Impact",
                   "filter": "impact"
-                }
-              }
-            }
-          }
-        },
-        {
-          "title": "App Injector",
-          "id": "app-injector",
-          "plugins": {
-            "xwalk": {
-              "page": {
-                "resourceType": "core/franklin/components/block/v1/block",
-                "template": {
-                  "name": "App Injector",
-                  "model": "app-injector"
                 }
               }
             }
