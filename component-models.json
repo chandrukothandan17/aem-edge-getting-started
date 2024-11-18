@@ -647,7 +647,7 @@
         "component": "date-time",
         "name": "startDate",
         "label": "Start date",
-        "valueType": "date-time",
+        "valueType": "date",
         "description": "Select the Start date for the Alert",
         "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]"
       },
