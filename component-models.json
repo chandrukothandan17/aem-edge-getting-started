@@ -651,7 +651,7 @@
         "valueType": "date-time",
         "description": "Select the Start date for the Alert",
         "valueFormat": "null",
-        "displayFormat":"null"
+        "displayFormat":"EEEE, d MMMM, y"
       },
       {
         "component": "date-time",
@@ -660,7 +660,7 @@
         "valueType": "date-time",
         "description": "Select the End date for the Alert",
         "valueFormat": "null",
-        "displayFormat":"null"
+        "displayFormat":"EEEE, d MMMM, y"
       }
     ]
   },
