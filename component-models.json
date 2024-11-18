@@ -618,7 +618,8 @@
         "valueType": "string",
         "name": "alert-id",
         "value": "alert-id",
-        "label": "Alert Id"
+        "label": "Alert Id",
+        "readOnly":true
       },
       {
         "component": "text",
@@ -674,7 +675,6 @@
   },
   {
     "id": "impact-list",
-    "multi":true,
     "fields": [
       {
         "component": "container",
