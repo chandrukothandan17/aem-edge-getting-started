@@ -641,8 +641,8 @@
         "label": "Last Updated",
         "valueType": "date-time",
         "description": "Select the Start date for the Alert",
-        "valueFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
-        "displayFormat":"YYYY-MM-DDTHH:mm:ss.sssZ"
+        "valueFormat": "YYYY-MM-DDTHH:mm:ss.sss'Z'",
+        "displayFormat":"YYYY-MM-DDTHH:mm:ss.sss'Z'"
       },
       {
         "component": "date-time",
@@ -650,8 +650,8 @@
         "label": "Start date",
         "valueType": "date-time",
         "description": "Select the Start date for the Alert",
-        "valueFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
-        "displayFormat":"YYYY-MM-DDTHH:mm:ss.sssZ"
+        "valueFormat": "YYYY-MM-DDTHH:mm:ss.sss'Z'",
+        "displayFormat":"YYYY-MM-DDTHH:mm:ss.sss'Z'"
       },
       {
         "component": "date-time",
@@ -659,8 +659,8 @@
         "label": "End date",
         "valueType": "date-time",
         "description": "Select the End date for the Alert",
-        "valueFormat": "YYYY-MM-DDTHH:mm:ss.sssZ",
-        "displayFormat":"YYYY-MM-DDTHH:mm:ss.sssZ"
+        "valueFormat": "YYYY-MM-DDTHH:mm:ss.sss'Z'",
+        "displayFormat":"YYYY-MM-DDTHH:mm:ss.sss'Z'"
       }
     ]
   },
