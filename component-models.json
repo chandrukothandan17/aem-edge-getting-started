@@ -674,6 +674,7 @@
   },
   {
     "id": "impact-list",
+    "multi":true,
     "fields": [
       {
         "component": "container",
@@ -681,7 +682,6 @@
         "name": "container",
         "valueType": "string",
         "collapsible": false,
-        "multi" : true,
         "fields": [
           {
             "component": "text",
