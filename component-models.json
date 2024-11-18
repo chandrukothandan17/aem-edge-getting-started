@@ -680,7 +680,7 @@
         "label": "Container",
         "name": "container",
         "valueType": "string",
-        "collapsible": true,
+        "collapsible": false,
         "fields": [
           {
             "component": "text",
