@@ -601,14 +601,16 @@
         "valueType": "string",
         "name": "alert-id",
         "value": "alert-",
-        "label": "Alert Id"
+        "label": "Alert Id",
+        "required":true
       },
       {
         "component": "text",
         "valueType": "string",
         "name": "summary",
         "value": "",
-        "label": "Summary"
+        "label": "Summary",
+        "required":true
       },
       {
         "component": "richtext",
