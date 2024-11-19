@@ -599,15 +599,6 @@
       {
         "component": "text",
         "valueType": "string",
-        "name": "alert-id",
-        "value": "alert-",
-        "label": "Alert Id",
-        "required":true,
-        "description":"Please Enter Unique Id"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
         "name": "summary",
         "value": "",
         "label": "Summary",
