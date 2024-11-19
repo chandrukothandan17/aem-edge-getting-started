@@ -38,8 +38,3 @@ fetch(url, {
 .catch(error => {
   console.error('Error:', error);
 });
-This code snippet sets up a POST request to the specified URL using the Fetch API. It includes headers to specify that the content type is JSON and converts the jsonData object into a JSON string with JSON.stringify. After sending the request, it handles the response, logging the result to the console if successful, or catching and logging any errors if the request fails.
-
-
-Copy
-Tha
