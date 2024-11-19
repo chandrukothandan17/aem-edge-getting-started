@@ -617,9 +617,8 @@
         "component": "text",
         "valueType": "string",
         "name": "alert-id",
-        "value": "alert-id",
-        "label": "Alert Id",
-        "readOnly":true
+        "value": "alert-",
+        "label": "Alert Id"
       },
       {
         "component": "text",
@@ -639,9 +638,9 @@
         "component": "date-time",
         "name": "lastUpdated",
         "label": "Last Updated",
-        "valueType": "date-time",
+        "valueType": "date",
         "description": "Select the Start date for the Alert",
-        "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.SSS'Z'"
+        "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]"
       },
       {
         "component": "date-time",
@@ -649,7 +648,7 @@
         "label": "Start date",
         "valueType": "date-time",
         "description": "Select the Start date for the Alert",
-        "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.SSS'Z'"
+        "valueFormat": "YYYY-MM-DD[T]HH:mm:ss.SSS[Z]"
       },
       {
         "component": "date-time",
@@ -657,7 +656,7 @@
         "label": "End date",
         "valueType": "date-time",
         "description": "Select the End date for the Alert",
-        "valueFormat": "YYYY-MM-DDTHH:mm:ss.sss±HH:MM"
+        "valueFormat": "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
       }
     ]
   },
