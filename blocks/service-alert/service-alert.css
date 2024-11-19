@@ -1,5 +1,5 @@
 .service-alert-wrapper {
     border:20px solid black;
-    background-color: var(--gray-4);
+    background-color: lightgray;
     margin-bottom: 20px;
 }
