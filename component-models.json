@@ -594,23 +594,6 @@
     ]
   },
   {
-    "id": "app-injector",
-    "fields": [
-      {
-        "component": "aem-content",
-        "name": "reference",
-        "label": "Reference"
-      },
-      {
-        "component": "text",
-        "valueType": "number",
-        "name": "alert-number",
-        "value": "",
-        "label": "Alert Number"
-      }
-    ]
-  },
-  {
     "id": "service-alert-item",
     "fields": [
       {
@@ -657,18 +640,6 @@
         "valueType": "date-time",
         "description": "Select the End date for the Alert",
         "valueFormat": "YYYY-MM-DDTHH:mm:ss.SSS[Z]"
-      }
-    ]
-  },
-  {
-    "id": "impact",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "impact-heading",
-        "value": "",
-        "label": "Impact Heading"
       }
     ]
   },
