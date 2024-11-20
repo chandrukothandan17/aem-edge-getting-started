@@ -598,6 +598,13 @@
     "fields": [
       {
         "component": "text",
+        "name": "alert-id",
+        "value": "",
+        "label": "Alert Id",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
         "valueType": "string",
         "name": "summary",
         "value": "",
