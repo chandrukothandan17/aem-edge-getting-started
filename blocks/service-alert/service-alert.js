@@ -1,5 +1,11 @@
 console.log("hello");
 
-$('button[aria-label="Properties"]').onclick(function(){  
-  console.log("propertied"); 
+
+const buttons = document.querySelectorAll('button[aria-label="Properties"]');
+
+// Add a click event listener to each button
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    console.log("propertied");
+  });
 });
