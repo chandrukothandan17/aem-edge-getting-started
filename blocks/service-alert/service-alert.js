@@ -9,4 +9,6 @@ async function propertiesClicked(){
   });
 }
 
-propertiesClicked();
+document.addEventListener('DOMContentLoaded', function() {
+  propertiesClicked();
+});
