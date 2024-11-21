@@ -10,7 +10,7 @@ if (document.readyState != "loading") {
     const childs = wrapper[first];
     const listChildren = childs.children;
     for(let lis in listChildren){
-        console.log(listChildren[list]);
+        console.log(listChildren[lis]);
     }
   }
   
