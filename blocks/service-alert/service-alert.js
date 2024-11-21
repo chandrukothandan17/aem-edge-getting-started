@@ -26,5 +26,11 @@ if (document.readyState != "loading") {
         }
     } */
   }
+
+
+  const serviceMapper = document.querySelectorAll('.service-alert-wrapper');
+  serviceMapper.forEach((ele)=>{
+      console.log(ele);
+  });
   
 }
