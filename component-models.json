@@ -606,7 +606,7 @@
       {
         "component": "text",
         "name": "jcr:created",
-        "value": "",
+        "value": "${currentDate = new Date(); formatDate(currentDate, 'yyyy-MM-dd')}",
         "label": "JCR Created",
         "valueType": "date"
       },
