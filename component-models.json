@@ -605,8 +605,8 @@
       },
       {
         "component": "date-time",
-        "name": "currentDate",
-        "value": "${currentDate = new Date(); formatDate(currentDate, 'yyyy-MM-dd')}",
+        "name": "jcr:created",
+        "value": "",
         "label": "Current Date",
         "valueType": "date"
       },
