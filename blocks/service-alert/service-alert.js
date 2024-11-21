@@ -9,7 +9,7 @@ if (document.readyState != "loading") {
   for(let service in wrapper){
     let serviceWrapper = wrapper[service];
     console.log(serviceWrapper);
-    let listChildren = serviceWrapper.children;
+  /*  let listChildren = serviceWrapper.children;
     console.log("listChildren "+listChildren.length);
     for(let lis in listChildren){
         let sectionItem = listChildren[lis];
@@ -24,7 +24,7 @@ if (document.readyState != "loading") {
           console.log(resource);
           console.log(label);
         }
-    }
+    } */
   }
   
 }
