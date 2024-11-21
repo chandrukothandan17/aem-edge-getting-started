@@ -4,6 +4,9 @@ if (document.readyState != "loading") {
   console.log("loading done");
 
   console.log("dom loaded");
+
+  const resource = document.querySelectorAll('.service-alert-container')[0].attributes['data-aue-resource'].textContent;
+  console.log(resource);
   //const wrapper = document.getElementsByClassName('service-alert-wrapper'); 
   //console.log(wrapper);
   //for(let service in wrapper){
@@ -28,7 +31,7 @@ if (document.readyState != "loading") {
   
 
 
-  const serviceMapper = document.querySelectorAll('.service-alert-wrapper');
+  /*const serviceMapper = document.querySelectorAll('.service-alert-wrapper');
   serviceMapper.forEach((ele)=>{
       console.log(ele);
       const child = ele.children;
@@ -47,6 +50,6 @@ if (document.readyState != "loading") {
           console.log(label);
         } */
       }
-  });
+  }); */
   
 }
