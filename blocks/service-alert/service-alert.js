@@ -14,8 +14,10 @@ if (document.readyState != "loading") {
         const sectionList = sectionItem.children;
         for(let items in sectionList){
           const serviceAlertItem = sectionList[items];
-        console.log(serviceAlertItem.attributes)
-         console.log(serviceAlertItem.attributes['data-aue-resource']);
+          const resource = serviceAlertItem.attributes['data-aue-resource'];
+          const label = serviceAlertItem.attributes['data-aue-label']
+          console.log(resource);
+          console.log(label);
         }
     }
   }
