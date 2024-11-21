@@ -9,6 +9,7 @@ if (document.readyState != "loading") {
   wrapper.forEach((ele) => {
       console.log(ele);
       const firstChild = ele.firstElementChild;
+      console.log('firstChild');
       console.log(firstChild);
       firstChild.forEach((list) => {
             console.log(list);
