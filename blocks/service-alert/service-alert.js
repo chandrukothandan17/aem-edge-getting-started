@@ -34,7 +34,8 @@ if (document.readyState != "loading") {
       const child = ele.children;
       for(let lis in child){
         let sectionItem = child[lis];
-        console.log(sectionItem);
+        console.log(sectionItem.attributes['data-aue-resource']);
+       /* console.log(sectionItem);
         let sectionList = sectionItem.children;
         console.log("length sectionitem "+sectionList.length);
         for(let items in sectionList){
@@ -44,7 +45,7 @@ if (document.readyState != "loading") {
           let label = serviceAlertItem.attributes['data-aue-label']
           console.log(resource);
           console.log(label);
-        }
+        } */
       }
   });
   
