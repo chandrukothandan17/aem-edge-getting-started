@@ -8,9 +8,11 @@ if (document.readyState != "loading") {
 
   for(let service in wrapper){
     const serviceWrapper = wrapper[service];
+    console.log(serviceWrapper);
     const listChildren = serviceWrapper.children;
     for(let lis in listChildren){
         const sectionItem = listChildren[lis];
+        console.log(sectionItem);
         const sectionList = sectionItem.children;
         for(let items in sectionList){
           console.log(sectionList[items]);
