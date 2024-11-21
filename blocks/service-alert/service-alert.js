@@ -49,7 +49,7 @@ if (document.readyState != "loading") {
           console.log(resource);
           console.log(label);
         } */
-      }
-  }); */
+    //  }
+  //}); */
   
 }
