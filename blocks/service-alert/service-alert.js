@@ -6,21 +6,16 @@ if (document.readyState != "loading") {
   console.log("dom loaded");
   const wrapper = document.getElementsByClassName('service-alert-wrapper'); 
 
-  for(let first in wrapper){
-    const childs = wrapper[first];
-    const listChildren = childs.children;
+  for(let service in wrapper){
+    const serviceWrapper = wrapper[service];
+    const listChildren = serviceWrapper.children;
     for(let lis in listChildren){
-        console.log(listChildren[lis]);
+        const sectionItem = listChildren[lis];
+        const sectionList = sectionItem.children;
+        for(let items in sectionList){
+          console.log(sectionList[items]);
+        }
     }
   }
   
-
- /*listChildren.forEach((ele) => {
-      console.log(ele);
-      const firstChild = ele.firstElementChild;
-      console.log('firstChild');
-      console.log(firstChild);
-     
-  }); */
-
 }
