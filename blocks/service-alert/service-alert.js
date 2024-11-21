@@ -7,14 +7,14 @@ if (document.readyState != "loading") {
   const wrapper = document.getElementsByClassName('service-alert-wrapper'); 
 
   for(let first in wrapper){
-    console.log(wrapper[first]);
+    const childs = wrapper[first];
+    const listChildren = childs.children;
+    for(let lis in listChildren){
+        console.log(listChildren[list]);
+    }
   }
   
 
-  console.log(wrapper[0]);
-  const firstChild = wrapper[0].firstElementChild;
-  const listChildren = firstChild.children;
-  console.log(listChildren);
  /*listChildren.forEach((ele) => {
       console.log(ele);
       const firstChild = ele.firstElementChild;
