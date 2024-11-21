@@ -30,7 +30,10 @@ if (document.readyState != "loading") {
 
   const serviceMapper = document.querySelectorAll('.service-alert-wrapper');
   serviceMapper.forEach((ele)=>{
-      console.log(ele);
+      const child = ele.children;
+      for(let lis in listChildren){
+          console.log(listChildren[lis]);
+      }
   });
   
 }
