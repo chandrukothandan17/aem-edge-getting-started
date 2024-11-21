@@ -51,5 +51,19 @@ if (document.readyState != "loading") {
         } */
     //  }
   //}); */
+
+
+  const data = {"connections":[{"name":"aemconnection","protocol":"xwalk","uri":"https://author-p120465-e1171116.adobeaemcloud.com"}],"target":{"resource":"urn:aemconnection:/content/aem-edge-getting-started-site/index/service-alerts/jcr:content/root/section","type":"container","prop":""}};
+
+const options = {
+  method: 'POST', // Specify the request method
+	headers: {
+		'Content-Type': 'application/json'
+	  },
+  body: JSON.stringify(data) // Convert the data to a JSON string
+};
+
+const result = await fetch('https://universal-editor-service.experiencecloud.live/details', options);
+console.log(await result.json());
   
 }
