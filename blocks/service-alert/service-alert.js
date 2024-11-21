@@ -7,18 +7,18 @@ if (document.readyState != "loading") {
   const wrapper = document.getElementsByClassName('service-alert-wrapper'); 
 
   for(let service in wrapper){
-    const serviceWrapper = wrapper[service];
+    let serviceWrapper = wrapper[service];
     console.log(serviceWrapper);
-    const listChildren = serviceWrapper.children;
+    let listChildren = serviceWrapper.children;
     for(let lis in listChildren){
-        const sectionItem = listChildren[lis];
+        let sectionItem = listChildren[lis];
         console.log(sectionItem);
-        const sectionList = sectionItem.children;
+        let sectionList = sectionItem.children;
         for(let items in sectionList){
           console.log(sectionList[items]);
-          const serviceAlertItem = sectionList[items];
-          const resource = serviceAlertItem.attributes['data-aue-resource'];
-          const label = serviceAlertItem.attributes['data-aue-label']
+          let serviceAlertItem = sectionList[items];
+          let resource = serviceAlertItem.attributes['data-aue-resource'];
+          let label = serviceAlertItem.attributes['data-aue-label']
           console.log(resource);
           console.log(label);
         }
