@@ -31,8 +31,8 @@ if (document.readyState != "loading") {
   const serviceMapper = document.querySelectorAll('.service-alert-wrapper');
   serviceMapper.forEach((ele)=>{
       const child = ele.children;
-      for(let lis in listChildren){
-          console.log(listChildren[lis]);
+      for(let lis in child){
+          console.log(child[lis]);
       }
   });
   
