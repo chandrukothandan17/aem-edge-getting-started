@@ -15,7 +15,7 @@ if (document.readyState != "loading") {
         for(let items in sectionList){
           const serviceAlertItem = sectionList[items];
          console.log(serviceAlertItem['data-aue-label']);
-         console.log(serviceAlertItem.data-aue-label);
+         console.log(serviceAlertItem.attr('data-aue-label'));
         }
     }
   }
