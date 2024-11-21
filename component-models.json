@@ -605,6 +605,13 @@
       },
       {
         "component": "text",
+        "name": "jcr:content",
+        "value": "",
+        "label": "JCR Content",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
         "valueType": "string",
         "name": "summary",
         "value": "",
