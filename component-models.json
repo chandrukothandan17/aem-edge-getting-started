@@ -608,7 +608,7 @@
         "name": "jcr:content",
         "value": "",
         "label": "JCR Content",
-        "valueType": "string"
+        "valueType": "date"
       },
       {
         "component": "text",
