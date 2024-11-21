@@ -6,7 +6,7 @@ if (document.readyState != "loading") {
   console.log("dom loaded");
   const wrapper = document.getElementsByClassName('service-alert-wrapper'); 
 
-  for(first in wrapper){
+  for(let first in wrapper){
     console.log(first);
   }
   
