@@ -10,10 +10,12 @@ if (document.readyState != "loading") {
     let serviceWrapper = wrapper[service];
     console.log(serviceWrapper);
     let listChildren = serviceWrapper.children;
+    console.log("listChildren "+listChildren.length);
     for(let lis in listChildren){
         let sectionItem = listChildren[lis];
         console.log(sectionItem);
         let sectionList = sectionItem.children;
+        console.log("length sectionitem "+sectionList.length);
         for(let items in sectionList){
           console.log(sectionList[items]);
           let serviceAlertItem = sectionList[items];
