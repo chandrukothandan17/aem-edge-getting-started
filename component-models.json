@@ -605,9 +605,9 @@
       },
       {
         "component": "text",
-        "name": "jcr:content",
+        "name": "jcr:created",
         "value": "",
-        "label": "JCR Content",
+        "label": "JCR Created",
         "valueType": "date"
       },
       {
