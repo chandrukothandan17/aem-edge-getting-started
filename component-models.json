@@ -598,7 +598,7 @@
     "fields": [
       {
         "component": "text",
-        "name": "jcr:title",
+        "name": "sling:resourceType",
         "value": "",
         "label": "Alert Id",
         "valueType": "string"
