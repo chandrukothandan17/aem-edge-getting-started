@@ -23,7 +23,9 @@ export default async function decorate(block) {
         upsBodyContent.className = 'card-body-content';
 
         const h1 = document.createElement('h1');
-        h1.innerHTML = text;
+        h1.textContent  = text;
+
+        upsBodyContent.appendChild(h1);
 
         upsCard.append(upsImage, upsBody);
         
