@@ -2,8 +2,40 @@ export default async function decorate(block) {
 
     [...block.children].forEach((row) => {
         const label = row.children[0];
-        console.log(label.firstChild.textContent);
+        const text = label.firstChild.textContent;
+        const marketingHeroBlock = document.createElement('div');
+        marketingHeroBlock.className = 'ups-component hero hero-default  has-breadcrumbs';
+
+        const marketingContainer = document.createElement('div');
+        marketingContainer.className = 'ups-container';
+
+        const upsCard = document.createElement('div');
+        upsCard.className = 'card ups-card';
+
+        const upsImage = document.createElement('div');
+        upsCard.className = 'card-img fade-in-up-light';
+
+        const upsBody = document.createElement('div');
+        upsCard.className = 'card-body fade-in-up-light';
+
+        const upsBodyContent = document.createElement('div');
+        upsBodyContent.className = 'card-body-content';
+
+        const h1 = document.createElement('h1');
+        h1.innerHTML = text;
+
+        upsCard.append(upsImage, upsBody);
         
+        marketingContainer.appendChild(upsCard);
+
+        const arcContainer = document.createElement('div');
+        arcContainer.className = 'arc-container';
+
+        marketingHeroBlock.append(marketingContainer,arcContainer);
+
+        row.replaceWith(marketingHeroBlock);
+
+
     });
 
 }
