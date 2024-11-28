@@ -3,6 +3,7 @@ export default async function decorate(block) {
     [...block.children].forEach((row) => {
         const label = row.children[0];
         const text = label.firstChild.textContent;
+        console.log(text);
         const marketingHeroBlock = document.createElement('div');
         marketingHeroBlock.className = 'ups-component hero hero-default  has-breadcrumbs';
 
