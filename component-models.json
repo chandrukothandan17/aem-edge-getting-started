@@ -598,7 +598,7 @@
     "fields": [
       {
         "component": "text",
-        "name": "sling:resourceType",
+        "name": "",
         "value": "",
         "label": "Alert Id",
         "valueType": "string"
@@ -673,6 +673,122 @@
             "label": "Impact Postalcode",
             "name": "impact-postalcode",
             "valueType": "string"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "marketing-block",
+    "fields":[
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "label": "Title",
+        "value" :""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "description",
+        "label": "Description",
+        "value" :""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta-text",
+        "label": "CTA Text",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "cta-link",
+        "label": "CTA Link",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "secondary-cta-link",
+        "label": "Secondary CTA Link",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "secondary-cta-text",
+        "label": "Secondary CTA Text",
+        "value": ""
+      },
+      {
+        "component": "select",
+        "name": "image-type",
+        "value": "",
+        "label": "Image Type",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Image",
+            "value": "image"
+          },
+          {
+            "name": "Image CutOut",
+            "value": "image-cutout"
+          },
+          {
+            "name": "Image CutOut Secondary CTA",
+            "value": "image-cutout-secondary-cta"
+          },
+          {
+            "name": "Video",
+            "value": "video"
+          },
+          {
+            "name": "Video Secondary CTA",
+            "value": "video-seondary-cta"
+          },
+          {
+            "name":"Image Without Small Text",
+            "value":"image-without-small-text"
+          },
+          {
+            "name":"Image Without Small Text with Secondary CTA",
+            "value":"image-without-small-text-with-secondary-cta"
+          },
+          {
+            "name":"Image Without Body Text",
+            "value":"image-without-body-text"
+          },
+          {
+            "name":"Image Without Small Text with Secondary CTA",
+            "value":"image-without-small-text-with-secondary-cta"
+          },
+          {
+            "name":"Image Without CTA",
+            "value":"image-without-cta"
+          },
+          {
+            "name":"Image Without Body Text & CTA",
+            "value":"image-without-body-text-cta"
+          }, 
+          {
+            "name":"Image With Secondary CTA",
+            "value":"image-with-secondary-cta"
+          },
+          {
+            "name":"Image With UPS Healthcare Blue",
+            "value":"image-with-ups-healthcare-blue"
+          },
+          {
+            "name":"Image With Secondary CTA UPS Store Blue",
+            "value":"image-with-secondary-cta-ups-store-blue"
+          },
+          {
+            "name":"Image without body text & CTA UPS Dark Brown",
+            "value":"image-without-body-text-cta-ups-dark-brown"
           }
         ]
       }
