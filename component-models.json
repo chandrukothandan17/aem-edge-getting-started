@@ -679,7 +679,7 @@
     ]
   },
   {
-    "id": "marketing-block",
+    "id": "marketing-hero",
     "fields":[
       {
         "component": "text",
