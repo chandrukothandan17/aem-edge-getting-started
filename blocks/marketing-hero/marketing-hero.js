@@ -27,6 +27,8 @@ export default async function decorate(block) {
 
         upsBodyContent.appendChild(h1);
 
+        upsBody.appendChild(upsBodyContent);
+
         upsCard.append(upsImage, upsBody);
         
         marketingContainer.appendChild(upsCard);
