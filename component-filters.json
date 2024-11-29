@@ -33,8 +33,7 @@
       "service-alert",
       "service-alert-item",
       "impact",
-      "marketing-hero",
-      "marketing-item"
+      "marketing-hero"
     ]
   },
   {
@@ -51,6 +50,12 @@
     "id": "accordion",
     "components": [
       "accordion-item"
+    ]
+  },
+  {
+    "id": "marketing-block",
+    "components": [
+      "marketing-item"
     ]
   },
   {
