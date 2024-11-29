@@ -801,5 +801,24 @@
         ]
       }
     ]
+  },
+  {
+    "id": "marketing-item",
+    "fields": [
+      {
+        "component": "text",
+        "label": "Impact Title",
+        "name": "impact-title",
+        "valueType": "string",
+        "value" : ""
+      },
+      {
+        "component": "text",
+        "label": "Impact Postalcode",
+        "name": "impact-postalcode",
+        "valueType": "string",
+        "value":""
+      }
+    ]
   }
 ]
