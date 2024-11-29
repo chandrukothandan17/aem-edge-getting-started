@@ -49,9 +49,9 @@ export default async function decorate(block) {
         const arcContainer = document.createElement('div');
         arcContainer.className = 'arc-container';
 
-        marketingHeroBlock.append(marketingContainer,arcContainer);
+        marketingHeroBlock.append(marketingContainer, arcContainer);
 
-       // block.appendChildren(marketingHeroBlock);
+        block.appendChild(marketingHeroBlock);
        console.log(block);
 
         }
