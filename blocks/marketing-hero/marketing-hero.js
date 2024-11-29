@@ -1,5 +1,7 @@
 export default async function decorate(block) {
 
+    console.log(block);
+
     [...block.children].forEach((row) => {
         const label = row.children[0];
         const text = label.firstChild.textContent;
