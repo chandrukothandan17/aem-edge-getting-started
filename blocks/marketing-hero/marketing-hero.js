@@ -1,21 +1,23 @@
 export default async function decorate(block) {
 
    
-   // console.log(block.querySelector('p'));
+    // console.log(block.querySelector('p'));
+ 
+     const rows = block.querySelectorAll(':scope > div');
 
-    const rows = block.querySelectorAll(':scope > div');
 
-    /*rows.forEach((r)=> {
-        console.log(r.innerText);
-    }); */
+     function createMarketingBlock(rows){
+        if(rows.length>0){
+            console.log(rows[0].innerText);
+            const title = rows[0].innerText;
+            const description = rows[1].innerText;
+            const ctaButton = rows[2].innerText;
+            const ctaUrl = rows[3].innerText;
+            const secondaryCtaButton = rows[4].innerText;
+            const secondaryCtaUrl = rows[5].innerText;
+            const imageType = rows[6].innerText;
 
-    console.log(rows[0].innerText);
-
-    [...block.children].forEach((row) => {
-        const label = row.children[0];
-        const text = label.firstChild.textContent;
-        console.log(text);
-        const marketingHeroBlock = document.createElement('div');
+            const marketingHeroBlock = document.createElement('div');
         marketingHeroBlock.className = 'ups-component hero hero-default  has-breadcrumbs';
 
         const marketingContainer = document.createElement('div');
@@ -34,7 +36,7 @@ export default async function decorate(block) {
         upsBodyContent.className = 'card-body-content';
 
         const h1 = document.createElement('h1');
-        h1.textContent  = text;
+        h1.textContent  = title;
 
         upsBodyContent.appendChild(h1);
 
@@ -49,9 +51,22 @@ export default async function decorate(block) {
 
         marketingHeroBlock.append(marketingContainer,arcContainer);
 
-      //  row.replaceWith(marketingHeroBlock);
+        block.append(marketingHeroBlock);
 
+        }
 
-    });
-
-}
+        
+     }
+     
+ 
+     [...block.children].forEach((row) => {
+         
+        
+        
+ 
+         row.remove();
+ 
+ 
+     });
+ 
+ }
