@@ -28,10 +28,16 @@ export default async function decorate(block) {
         upsCard.className = 'card ups-card';
 
         const upsImage = document.createElement('div');
-        upsCard.className = 'card-img fade-in-up-light';
+        upsImage.className = 'card-img fade-in-up-light';
+
+        const image = document.createElement('img');
+        image.className = 'img-fluid';
+        image.src = imageurl;
+        image.loading = 'lazy';
+        image.alt = 'banner';
 
         const upsBody = document.createElement('div');
-        upsCard.className = 'card-body fade-in-up-light';
+        upsBody.className = 'card-body fade-in-up-light';
 
         const upsBodyContent = document.createElement('div');
         upsBodyContent.className = 'card-body-content';
