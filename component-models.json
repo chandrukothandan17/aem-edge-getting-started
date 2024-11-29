@@ -803,7 +803,7 @@
     ]
   },
   {
-    "id": "marketing-item",
+    "id": "marketing-hero-item",
     "fields": [
       {
         "component": "text",

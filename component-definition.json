@@ -494,8 +494,8 @@
           }
         },
         {
-          "title": "Marketing Item",
-          "id": "marketing-item",
+          "title": "Marketing Hero Item",
+          "id": "marketing-hero-item",
           "plugins": {
             "xwalk": {
               "page": {

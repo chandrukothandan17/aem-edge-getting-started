@@ -53,9 +53,9 @@
     ]
   },
   {
-    "id": "marketing-block",
+    "id": "marketing-hero",
     "components": [
-      "marketing-item"
+      "marketing-hero-item"
     ]
   },
   {
