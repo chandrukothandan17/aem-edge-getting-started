@@ -7,7 +7,12 @@ export default async function decorate(block) {
 
     console.log(rows);
 
-    console.log(rows.innerText);
+    rows.forEach((r)=> {
+        console.log(r);
+        console.log(r.innerText);
+    });
+
+   // console.log(rows.innerText);
 
     [...block.children].forEach((row) => {
         const label = row.children[0];
