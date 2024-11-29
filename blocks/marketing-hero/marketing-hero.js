@@ -70,7 +70,7 @@ export default async function decorate(block) {
 
         marketingHeroBlock.append(marketingContainer, arcContainer);
         [...block.children].forEach((row) => {
-            row.remove();
+           // row.remove();
         });
         block.appendChild(marketingHeroBlock);
        console.log(block);
