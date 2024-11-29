@@ -4,7 +4,7 @@ export default async function decorate(block) {
     // console.log(block.querySelector('p'));
  
      const rows = block.querySelectorAll(':scope > div');
-
+     createMarketingBlock(rows);
 
      function createMarketingBlock(rows){
         if(rows.length>0){
