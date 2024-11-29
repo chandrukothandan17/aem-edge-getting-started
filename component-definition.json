@@ -501,8 +501,8 @@
               "page": {
                 "resourceType": "core/franklin/components/block/v1/block/item",
                 "template": {
-                  "name": "Marketing Item",
-                  "model": "marketing-item"
+                  "name": "Marketing Hero Item",
+                  "model": "marketing-hero-item"
                 }
               }
             }
