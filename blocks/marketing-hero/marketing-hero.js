@@ -38,7 +38,15 @@ export default async function decorate(block) {
         const h1 = document.createElement('h1');
         h1.textContent  = title;
 
-        upsBodyContent.appendChild(h1);
+        const cta = document.createElement('a');
+        cta.className = 'ups-cta ups-cta-primary';
+        cta.href = ctaUrl;
+        cta.textContent = ctaButton;
+
+        const p = document.createElement('p');
+        p.textContent = description;
+
+        upsBodyContent.append(h1, p, cta);
 
         upsBody.appendChild(upsBodyContent);
 
@@ -50,7 +58,7 @@ export default async function decorate(block) {
         arcContainer.className = 'arc-container';
 
         marketingHeroBlock.append(marketingContainer, arcContainer);
-
+            block.replace
         block.appendChild(marketingHeroBlock);
        console.log(block);
 
