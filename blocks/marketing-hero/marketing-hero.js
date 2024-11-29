@@ -5,14 +5,11 @@ export default async function decorate(block) {
 
     const rows = block.querySelectorAll(':scope > div');
 
-    console.log(rows);
-
-    rows.forEach((r)=> {
-        console.log(r);
+    /*rows.forEach((r)=> {
         console.log(r.innerText);
-    });
+    }); */
 
-   // console.log(rows.innerText);
+    console.log(rows[0].innerText);
 
     [...block.children].forEach((row) => {
         const label = row.children[0];
