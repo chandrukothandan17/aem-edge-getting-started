@@ -54,12 +54,6 @@
     ]
   },
   {
-    "id": "marketing-hero",
-    "components": [
-      "marketing-hero-item"
-    ]
-  },
-  {
     "id": "table",
     "components": [
       "table-row"
