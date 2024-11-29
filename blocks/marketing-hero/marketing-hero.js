@@ -18,6 +18,8 @@ export default async function decorate(block) {
             const imageurl = rows[6].innerText;
             const imageType = rows[7].innerText;
 
+            console.log(imageurl);
+
             const marketingHeroBlock = document.createElement('div');
         marketingHeroBlock.className = 'ups-component hero hero-default  has-breadcrumbs';
 
