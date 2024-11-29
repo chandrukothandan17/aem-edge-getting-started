@@ -724,6 +724,14 @@
         "value": ""
       },
       {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "value": "",
+        "rootPath":"/content/dam/aem-edge-getting-started-site"
+      },
+      {
         "component": "select",
         "name": "image-type",
         "value": "",
