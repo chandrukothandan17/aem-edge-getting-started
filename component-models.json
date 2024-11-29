@@ -729,7 +729,7 @@
         "name": "image",
         "label": "Image",
         "value": "",
-        "rootPath":"/content/dam/aem-edge-getting-started-site"
+        "rootPath":"/content/dam/aem-edge-getting-started-site/"
       },
       {
         "component": "select",
@@ -807,15 +807,15 @@
     "fields": [
       {
         "component": "text",
-        "label": "Impact Title",
-        "name": "impact-title",
+        "label": "Marketing Title",
+        "name": "marketing-title",
         "valueType": "string",
         "value" : ""
       },
       {
         "component": "text",
-        "label": "Impact Postalcode",
-        "name": "impact-postalcode",
+        "label": "Marketing Postalcode",
+        "name": "marketing-postalcode",
         "valueType": "string",
         "value":""
       }
