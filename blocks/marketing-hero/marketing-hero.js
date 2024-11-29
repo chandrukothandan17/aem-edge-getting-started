@@ -36,6 +36,8 @@ export default async function decorate(block) {
         image.loading = 'lazy';
         image.alt = 'banner';
 
+        upsImage.appendChild(image);
+
         const upsBody = document.createElement('div');
         upsBody.className = 'card-body fade-in-up-light';
 
