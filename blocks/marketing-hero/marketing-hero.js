@@ -6,6 +6,9 @@ export default async function decorate(block) {
     const rows = block.querySelectorAll(':scope > div');
 
     console.log(rows);
+
+    console.log(rows.innerText);
+
     [...block.children].forEach((row) => {
         const label = row.children[0];
         const text = label.firstChild.textContent;
