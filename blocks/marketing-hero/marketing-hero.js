@@ -58,7 +58,7 @@ export default async function decorate(block) {
         arcContainer.className = 'arc-container';
 
         marketingHeroBlock.append(marketingContainer, arcContainer);
-        block.forEach((row)=>{
+        [...block.children].forEach((row) => {
             row.remove();
         });
         block.appendChild(marketingHeroBlock);
