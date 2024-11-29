@@ -40,7 +40,7 @@ export default async function decorate(block) {
 
         marketingHeroBlock.append(marketingContainer,arcContainer);
 
-        row.replaceWith(marketingHeroBlock);
+      //  row.replaceWith(marketingHeroBlock);
 
 
     });
