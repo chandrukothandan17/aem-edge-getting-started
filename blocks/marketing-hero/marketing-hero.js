@@ -51,7 +51,8 @@ export default async function decorate(block) {
 
         marketingHeroBlock.append(marketingContainer,arcContainer);
 
-        block.appendChildren(marketingHeroBlock);
+       // block.appendChildren(marketingHeroBlock);
+       console.log(block);
 
         }
 
