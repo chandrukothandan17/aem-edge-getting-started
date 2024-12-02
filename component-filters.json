@@ -42,6 +42,10 @@
     "components": ["card"]
   },
   {
+    "id":"custom-blocks",
+    "components":[]
+  },
+  {
     "id": "service-alert-item",
     "components": [
       "impact-list"
