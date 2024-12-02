@@ -61,7 +61,10 @@ export default async function decorate(block) {
             const span = document.createElement('span');
             span.className = 'icon ups-icon-right-arrow';
 
-            cta.appendChild(span);
+            const span1 = document.createElement('span');
+            span.className = 'icon ups-icon-right-arrow';
+
+            cta.appendChild(span1);
 
             secondaryCta.appendChild(span);
 
