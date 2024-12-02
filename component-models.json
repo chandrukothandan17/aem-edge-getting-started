@@ -186,11 +186,21 @@
     "id": "custom-blocks",
     "fields": [
       {
-        "component": "text",
-        "name": "custom-text",
-        "value": "",
-        "label": "Custom Text",
-        "valueType": "string"
+        "component":"select",
+        "name":"filter",
+        "label":"Custom Blocks Filter",
+        "valueType":"string",
+        "value":"custom-blocks",
+        "options":[
+          {
+            "name":"1 Column",
+            "value":"table"
+          },
+          {
+            "name":"2 Columns",
+            "value":"table-2-columns"
+          }
+        ]
       }
     ]
   },
