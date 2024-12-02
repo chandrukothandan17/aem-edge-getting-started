@@ -70,6 +70,7 @@ export default async function decorate(block) {
             small.innerHTML = smallText[0].innerHTML;
             smallp.appendChild(small);
 
+            console.log(typeof imageType);
             console.log(imageType);
             console.log(imageType === 'image');
             console.log(imageType === 'image-without-small-text-with-secondary-cta');
