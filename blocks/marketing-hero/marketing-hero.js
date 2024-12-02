@@ -15,8 +15,10 @@ export default async function decorate(block) {
             const ctaUrl = rows[3].innerText;
             const secondaryCtaButton = rows[4].innerText;
             const secondaryCtaUrl = rows[5].innerText;
-            const imageurl = rows[6].innerText;
-            console.log(rows[6].querySelectorAll('img'));
+            
+            const imageList = rows[6].querySelectorAll('img');
+            console.log(imageList[0]);
+            const imageurl = imageList[0].attr('src');
             const imageType = rows[7].innerText;
 
             console.log(imageurl);
