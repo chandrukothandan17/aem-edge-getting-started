@@ -19,6 +19,7 @@ export default async function decorate(block) {
             const imageurl = imageList[0].getAttribute('src');
             const smallText = rows[7].querySelectorAll('p');
            // const smallText = rows[7].innerText;
+           console.log(smallText);
             const imageType = rows[8].innerText;
 
             const marketingHeroBlock = document.createElement('div');
