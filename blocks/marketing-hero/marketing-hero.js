@@ -16,6 +16,7 @@ export default async function decorate(block) {
             const secondaryCtaButton = rows[4].innerText;
             const secondaryCtaUrl = rows[5].innerText;
             const imageurl = rows[6].innerText;
+            console.log(rows[6]);
             const imageType = rows[7].innerText;
 
             console.log(imageurl);
