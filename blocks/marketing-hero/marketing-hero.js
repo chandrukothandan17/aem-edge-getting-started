@@ -17,7 +17,7 @@ export default async function decorate(block) {
             const secondaryCtaUrl = rows[5].innerText;
             const imageList = rows[6].querySelectorAll('img');
             const imageurl = imageList[0].getAttribute('src');
-            console.log(rows[7]);
+            console.log(rows[7].querySelectorAll('p')));
             const smallText = rows[7].innerText;
             const imageType = rows[8].innerText;
 
@@ -85,7 +85,7 @@ export default async function decorate(block) {
 
         marketingHeroBlock.append(marketingContainer, arcContainer);
         [...block.children].forEach((row) => {
-            // row.remove();
+             //row.remove();
         });
         block.appendChild(marketingHeroBlock);
         console.log(block);
@@ -93,17 +93,5 @@ export default async function decorate(block) {
         }
 
         
-     }
-     
- 
-     [...block.children].forEach((row) => {
-         
-        
-        
- 
-         //row.remove();
- 
- 
-     });
- 
+     } 
  }
