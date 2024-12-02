@@ -4812,7 +4812,7 @@ strong {
 
 @media(min-width: 768px) {
 	.ups-component.hero .arc-container::after {
-		height: 100px
+		height: 71px
 	}
 }
 
