@@ -4831,6 +4831,7 @@ strong {
     background-color: transparent;
 }
 
+
 @media(min-width: 768px) {
 	.ups-component.hero .card {
 		gap: 2rem;
