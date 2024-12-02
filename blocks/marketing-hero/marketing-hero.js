@@ -73,7 +73,10 @@ export default async function decorate(block) {
             const small = document.createElement('small');
             small.innerHTML = smallText[0].innerHTML;
             smallp.appendChild(small);
+
+            console.log(imageType);
             console.log(imageType == 'image');
+            console.log(imageType === 'image');
 
             if(imageType == 'image'){
                 console.log('image');
