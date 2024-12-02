@@ -4823,6 +4823,14 @@ strong {
 	z-index: 5
 }
 
+
+.ups-cta-secondary {
+    color: #0662bb;
+    border: 2px solid currentColor;
+    padding: calc(0.625rem - 2px) 1.5rem;
+    background-color: transparent;
+}
+
 @media(min-width: 768px) {
 	.ups-component.hero .card {
 		gap: 2rem;
