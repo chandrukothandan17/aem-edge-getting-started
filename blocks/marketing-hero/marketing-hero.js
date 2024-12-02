@@ -1,14 +1,10 @@
 export default async function decorate(block) {
 
-
-    // console.log(block.querySelector('p'));
-
     const rows = block.querySelectorAll(':scope > div');
     createMarketingBlock(rows);
 
     function createMarketingBlock(rows) {
         if (rows.length > 0) {
-            console.log(rows[0].innerText);
             const title = rows[0].innerText;
             const description = rows[1].innerText;
             const ctaButton = rows[2].innerText;
@@ -75,13 +71,13 @@ export default async function decorate(block) {
             smallp.appendChild(small);
 
             console.log(imageType);
-            console.log(imageType == 'image');
             console.log(imageType === 'image');
+            console.log(imageType === 'image-without-small-text-with-secondary-cta');
 
-            if(imageType == 'image'){
+            if(imageType === 'image'){
                 console.log('image');
                 upsBodyContent.append(h1, p, cta, smallp);
-            }else if(imageType == 'image-without-small-text-with-secondary-cta'){
+            }else if(imageType === 'image-without-small-text-with-secondary-cta'){
                 console.log('image with secondary');
                 upsBodyContent.append(h1, p, cta, secondaryCta, smallp);
             }
