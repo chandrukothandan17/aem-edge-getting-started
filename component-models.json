@@ -187,18 +187,18 @@
     "fields": [
       {
         "component":"select",
-        "name":"filter",
+        "name":"custom-blocks-filter",
         "label":"Custom Blocks Filter",
         "valueType":"string",
-        "value":"custom-blocks",
+        "value":"",
         "options":[
           {
-            "name":"1 Column",
-            "value":"table"
+            "name":"One",
+            "value":"1"
           },
           {
-            "name":"2 Columns",
-            "value":"table-2-columns"
+            "name":"Two",
+            "value":"2"
           }
         ]
       }
