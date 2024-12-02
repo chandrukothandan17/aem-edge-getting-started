@@ -12991,14 +12991,14 @@ body.accessible .ups-dropdown-control .select-dropdown-btn {
 	user-select: none;
 	font-size: 1rem;
 	font-weight: 500;
-	line-height: 1.5;
+	line-height: 1.5 rem;
 	border-radius: 2.5rem;
 	padding: .625rem 1.5rem;
 	cursor: pointer;
 	border: none;
 	min-width: 100px;
 	text-align: center;
-	color: #121212;
+	color: #121212 !important;
 	text-decoration: none;
 	transition: all .35s ease-in-out;
 	z-index: 1;
@@ -18219,9 +18219,11 @@ body.accessible .ups-tag_wrapper:focus {
 	border-radius: .5rem
 }
 
-.marketing-hero-wrapper{
+.marketing-hero{
     padding: 30px 0;
 }
+
+
 
 .card {
     position: static;

@@ -66,7 +66,12 @@ export default async function decorate(block) {
         const p = document.createElement('p');
         p.textContent = description;
 
-        upsBodyContent.append(h1, p, cta);
+        const smallp = document.createElement('p');
+        const small = document.createElement('small');
+        small.textContent = smallText;
+        smallp.appendChild(small);
+
+        upsBodyContent.append(h1, p, cta, smallp);
 
         upsBody.appendChild(upsBodyContent);
 
@@ -76,6 +81,10 @@ export default async function decorate(block) {
 
         const arcContainer = document.createElement('div');
         arcContainer.className = 'arc-container';
+
+        arcContainer.innerHTML = `<svg width="1440" class="arc" height="72" viewBox="0 0 1440 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M-400 176C139.222 -24.794 1028.42 -10.941 1440 13.8751V176L-400 176Z" fill="white"></path>
+                  </svg>`;
 
         marketingHeroBlock.append(marketingContainer, arcContainer);
         [...block.children].forEach((row) => {
