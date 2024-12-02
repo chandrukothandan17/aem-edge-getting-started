@@ -186,6 +186,13 @@
     "id": "custom-blocks",
     "fields": [
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "alt-custom-blocks",
+        "label": "Alt custom blocks",
+        "value": ""
+      },
+      {
         "component":"select",
         "name":"custom-blocks-filter",
         "label":"Custom Blocks Filter",
