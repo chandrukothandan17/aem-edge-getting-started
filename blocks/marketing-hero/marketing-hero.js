@@ -16,13 +16,10 @@ export default async function decorate(block) {
             const secondaryCtaButton = rows[4].innerText;
             const secondaryCtaUrl = rows[5].innerText;
             const imageList = rows[6].querySelectorAll('img');
-            console.log(imageList[0]);
             const imageurl = imageList[0].getAttribute('src');
-            console.log(imageurl);
+            console.log(rows[7]);
             const smallText = rows[7].innerText;
             const imageType = rows[8].innerText;
-
-            console.log(imageurl);
 
             const marketingHeroBlock = document.createElement('div');
         marketingHeroBlock.className = 'ups-component hero hero-default  has-breadcrumbs';
@@ -88,7 +85,7 @@ export default async function decorate(block) {
 
         marketingHeroBlock.append(marketingContainer, arcContainer);
         [...block.children].forEach((row) => {
-             row.remove();
+            // row.remove();
         });
         block.appendChild(marketingHeroBlock);
         console.log(block);
