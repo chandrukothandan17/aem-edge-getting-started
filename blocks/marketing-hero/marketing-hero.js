@@ -36,7 +36,7 @@ export default async function decorate(block) {
 
             const upsVideo = document.createElement('div');
             upsVideo.className = 'iframe-video-container';
-            upsVideo.innerHTML = ` <iframe title="youtube iframe" class="img-fluid" src="./marketing-hero/marketing-hero-video.html" 
+            upsVideo.innerHTML = ` <iframe title="youtube iframe" class="img-fluid" src="/content/aem-edge-getting-started-site.resource/blocks/marketing-hero/marketing-hero-video.html" 
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>`;
 
             const upsBody = document.createElement('div');
