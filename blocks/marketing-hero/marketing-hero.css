@@ -4788,6 +4788,17 @@ strong {
 	height: calc(100vw * 0.25)
 }
 
+@media (min-width: 1280px) {
+    .ups-component.hero .card-img img, .ups-component.hero .card-img video, .ups-component.hero .card-img .iframe-video-container {
+        width: calc(100% - 1rem);
+        height: auto;
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        left: 1rem;
+    }
+}
+
 @media(min-width: 768px)and (max-width: 991.98px) {
 	.ups-component.hero .arc-container::after {
 		display: none
@@ -13027,6 +13038,13 @@ body.accessible .ups-dropdown-control .select-dropdown-btn {
 	margin-right: 0;
 	display: inline-block;
 	font-size: .75rem
+}
+
+@media (min-width: 1280px) {
+    .ups-component.hero .card-body-content {
+        max-width: 488px;
+        min-height: 242px;
+    }
 }
 
 .ups-cta span.icon.ups-icon-left-arrow {
