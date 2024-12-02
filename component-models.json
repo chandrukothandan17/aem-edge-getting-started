@@ -744,6 +744,13 @@
         "rootPath":"/content/dam/aem-edge-getting-started-site/"
       },
       {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "small-text",
+        "label": "Small Text",
+        "value": ""
+      },
+      {
         "component": "select",
         "name": "image-type",
         "value": "",

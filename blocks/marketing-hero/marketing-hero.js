@@ -19,7 +19,8 @@ export default async function decorate(block) {
             console.log(imageList[0]);
             const imageurl = imageList[0].getAttribute('src');
             console.log(imageurl);
-            const imageType = rows[7].innerText;
+            const smallText = rows[7].innerText;
+            const imageType = rows[8].innerText;
 
             console.log(imageurl);
 
@@ -54,8 +55,13 @@ export default async function decorate(block) {
 
         const cta = document.createElement('a');
         cta.className = 'ups-cta ups-cta-primary';
-        cta.href = ctaUrl;
+        cta.href = ctaUrl.trim();
         cta.textContent = ctaButton;
+
+        const span = document.createElement('span');
+        span.className = 'icon ups-icon-right-arrow';
+        
+        cta.appendChild(span);
 
         const p = document.createElement('p');
         p.textContent = description;
