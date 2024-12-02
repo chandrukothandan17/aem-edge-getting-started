@@ -115,6 +115,7 @@
                 "resourceType": "core/franklin/components/block/v1/block",
                 "template": {
                     "name": "Custom Blocks",
+                    "model":"custom-blocks",
                     "filter": "custom-blocks"
                 }
               }
