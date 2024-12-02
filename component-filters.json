@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section","custom-blocks"]
+    "components": ["section"]
   },
   {
     "id": "columns",
@@ -34,7 +34,8 @@
       "service-alert-item",
       "impact",
       "marketing-hero",
-      "marketing-hero-item"
+      "marketing-hero-item",
+      "custom-blocks"
     ]
   },
   {
