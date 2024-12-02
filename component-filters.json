@@ -1,7 +1,7 @@
 [
   {
     "id": "main",
-    "components": ["section","custom-block"]
+    "components": ["section","custom-blocks"]
   },
   {
     "id": "columns",
