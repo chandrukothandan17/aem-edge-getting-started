@@ -63,12 +63,11 @@ export default async function decorate(block) {
         const p = document.createElement('p');
         p.textContent = description;
 
-        const smallp = document.createElement('p');
         const small = document.createElement('small');
-        small.textContent = smallText;
-        smallp.appendChild(small);
+        small.innerHTML = smallText[0];
+        //smallp.appendChild(small);
 
-        upsBodyContent.append(h1, p, cta, smallText[0]);
+        upsBodyContent.append(h1, p, cta, small);
 
         upsBody.appendChild(upsBodyContent);
 
