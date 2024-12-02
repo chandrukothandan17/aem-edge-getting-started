@@ -19,7 +19,7 @@ export default async function decorate(block) {
             const imageurl = imageList[0].getAttribute('src');
             const smallText = rows[7].querySelectorAll('p');
            // const smallText = rows[7].innerText;
-           console.log(smallText);
+           console.log(smallText.innerHTML);
             const imageType = rows[8].innerText;
 
             const marketingHeroBlock = document.createElement('div');
@@ -64,11 +64,12 @@ export default async function decorate(block) {
         const p = document.createElement('p');
         p.textContent = description;
 
+        const smallp = document.createElement('p');
         const small = document.createElement('small');
-        small.innerHTML = `+smallText[0]+`;
-        //smallp.appendChild(small);
+        small.innerHTML = smallText.innerHTML;
+        smallp.appendChild(small);
 
-        upsBodyContent.append(h1, p, cta, small);
+        upsBodyContent.append(h1, p, cta, smallp);
 
         upsBody.appendChild(upsBodyContent);
 
