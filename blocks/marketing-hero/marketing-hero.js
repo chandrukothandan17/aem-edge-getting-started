@@ -85,6 +85,13 @@ export default async function decorate(block) {
             } else if (imageType === "video") {
                 upsImage.appendChild(upsVideo);
                 upsBodyContent.append(h1, p, cta, smallp);
+            } else if (imageType === "video-seondary-cta"){
+                upsImage.appendChild(upsVideo);
+                upsBodyContent.append(h1, p, cta,secondaryCta, smallp);
+            }else {
+                console.log("else");
+                upsImage.appendChild(image);
+                upsBodyContent.append(h1, p, cta, smallp);
             }
 
             upsBody.appendChild(upsBodyContent);
