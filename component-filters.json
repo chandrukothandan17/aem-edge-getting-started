@@ -44,7 +44,7 @@
   },
   {
     "id":"custom-blocks",
-    "components":[]
+    "components":["custom-block"]
   },
   {
     "id": "service-alert-item",

@@ -195,6 +195,25 @@
     ]
   },
   {
+    "id": "custom-block",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "custom-image",
+        "label": "Custom Image",
+        "multi": false
+      },
+      {
+        "component": "richtext",
+        "name": "custom-title",
+        "value": "",
+        "label": "Custom Title",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
