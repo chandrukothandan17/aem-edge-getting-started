@@ -18,7 +18,8 @@ export default async function decorate(block) {
             
             const imageList = rows[6].querySelectorAll('img');
             console.log(imageList[0]);
-            const imageurl = imageList[0].attr('src');
+            const imageurl = imageList[0].getAttribute('src');
+            console.log(imageurl);
             const imageType = rows[7].innerText;
 
             console.log(imageurl);
