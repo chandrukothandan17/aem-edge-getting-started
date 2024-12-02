@@ -14,7 +14,7 @@ export default async function decorate(block) {
             const imageList = rows[6].querySelectorAll('img');
             const imageurl = imageList[0].getAttribute('src');
             const smallText = rows[7].querySelectorAll('p');
-            const imageType = rows[8].innerText;
+            const imageType = rows[8].innerText.trim();
 
             const marketingHeroBlock = document.createElement('div');
             marketingHeroBlock.className = 'ups-component hero hero-default  has-breadcrumbs';
@@ -72,13 +72,13 @@ export default async function decorate(block) {
 
             console.log(typeof imageType);
             console.log(imageType);
-            console.log(imageType == "image");
-            console.log(imageType == "image-without-small-text-with-secondary-cta");
+            console.log(imageType === "image");
+            console.log(imageType === "image-without-small-text-with-secondary-cta");
 
-            if(imageType == "image"){
+            if(imageType === "image"){
                 console.log("image");
                 upsBodyContent.append(h1, p, cta, smallp);
-            }else if(imageType == "image-without-small-text-with-secondary-cta"){
+            }else if(imageType === "image-without-small-text-with-secondary-cta"){
                 console.log("image with secondary");
                 upsBodyContent.append(h1, p, cta, secondaryCta, smallp);
             }
