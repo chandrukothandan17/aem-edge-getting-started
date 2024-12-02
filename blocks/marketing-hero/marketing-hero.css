@@ -4811,7 +4811,7 @@ strong {
 	}
 }
 
-@media(min-width: 1280px) {
+@media(min-width: 768px) {
 	.ups-component.hero .arc-container::after {
 		height: 150px
 	}
