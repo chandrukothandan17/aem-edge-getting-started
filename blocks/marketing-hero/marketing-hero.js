@@ -72,13 +72,13 @@ export default async function decorate(block) {
 
             console.log(typeof imageType);
             console.log(imageType);
-            console.log(imageType === "image");
-            console.log(imageType === "image-without-small-text-with-secondary-cta");
+            console.log(imageType == "image");
+            console.log(imageType == "image-without-small-text-with-secondary-cta");
 
-            if(imageType === "image"){
+            if(imageType == "image"){
                 console.log("image");
                 upsBodyContent.append(h1, p, cta, smallp);
-            }else if(imageType === "image-without-small-text-with-secondary-cta"){
+            }else if(imageType == "image-without-small-text-with-secondary-cta"){
                 console.log("image with secondary");
                 upsBodyContent.append(h1, p, cta, secondaryCta, smallp);
             }
