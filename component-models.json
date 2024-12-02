@@ -183,13 +183,13 @@
     ]
   },
   {
-    "id": "custom-block",
+    "id": "custom-blocks",
     "fields": [
       {
         "component": "text",
-        "name": "style",
+        "name": "custom-text",
         "value": "",
-        "label": "Style",
+        "label": "Custom Text",
         "valueType": "string"
       }
     ]
