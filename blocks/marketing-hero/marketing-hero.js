@@ -34,7 +34,10 @@ export default async function decorate(block) {
             image.loading = 'lazy';
             image.alt = 'banner';
 
-            upsImage.appendChild(image);
+            const upsVideo = document.createElement('div');
+            upsVideo.className = 'iframe-video-container';
+            upsVideo.innerHTML = ` <iframe title="youtube iframe" class="img-fluid" src="./marketing-hero/marketing-hero-video.html" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>`;
 
             const upsBody = document.createElement('div');
             upsBody.className = 'card-body fade-in-up-light';
@@ -70,17 +73,18 @@ export default async function decorate(block) {
             small.innerHTML = smallText[0].innerHTML;
             smallp.appendChild(small);
 
-            console.log(typeof imageType);
-            console.log(imageType);
-            console.log(imageType === "image");
-            console.log(imageType === "image-without-small-text-with-secondary-cta");
 
-            if(imageType === "image"){
+            if (imageType === "image") {
                 console.log("image");
+                upsImage.appendChild(image);
                 upsBodyContent.append(h1, p, cta, smallp);
-            }else if(imageType === "image-without-small-text-with-secondary-cta"){
+            } else if (imageType === "image-without-small-text-with-secondary-cta") {
                 console.log("image with secondary");
+                upsImage.appendChild(image);
                 upsBodyContent.append(h1, p, cta, secondaryCta, smallp);
+            } else if (imageType === "video") {
+                upsImage.appendChild(upsVideo);
+                upsBodyContent.append(h1, p, cta, smallp);
             }
 
             upsBody.appendChild(upsBodyContent);
