@@ -4762,7 +4762,7 @@ strong {
 
 @media(min-width: 768px) {
 	.ups-component.hero .arc-container {
-		max-height: calc((100vw / 1440) * 102);
+		//max-height: calc((100vw / 1440) * 102);
 		position: relative
 	}
 }
@@ -4813,7 +4813,7 @@ strong {
 
 @media(min-width: 768px) {
 	.ups-component.hero .arc-container::after {
-		height: 150px
+		height: 100px
 	}
 }
 
