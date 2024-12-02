@@ -177,7 +177,7 @@
         "component": "text",
         "name": "style",
         "value": "",
-        "label": "Style",
+        "label": "Style New",
         "valueType": "string"
       }
     ]
