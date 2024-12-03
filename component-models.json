@@ -889,7 +889,7 @@
         "valueType": "string"
       },
       {
-        "component": "aem-content",
+        "component": "reference",
         "name": "javascript-reference",
         "label": "Javascript Reference",
         "value": "",
