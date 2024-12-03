@@ -22,7 +22,7 @@ export default async function decorate(block) {
     });
 
     [...block.children].forEach((rows)=>{
-        rows.remove();
+      //  rows.remove();
     });
 
     const divElement = document.createElement('div');
