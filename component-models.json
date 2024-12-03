@@ -893,7 +893,7 @@
         "name": "javascript-reference",
         "label": "Javascript Reference",
         "value": "",
-        "valueType": "string[]",
+        "valueType": "string",
         "multi":true
       },
       {
@@ -901,7 +901,7 @@
         "name": "css-reference",
         "label": "Css Reference",
         "value": "",
-        "valueType": "string[]",
+        "valueType": "string",
         "multi":true
       },
       {
