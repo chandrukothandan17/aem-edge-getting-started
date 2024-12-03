@@ -13,7 +13,7 @@ export default async function decorate(block) {
         const jsfiles = row[2].innerText.trim();
         const cssfiles = row[3].innerText.trim();
         console.log(parentPath+" -> "+jsfiles+" -> "+cssfiles);
-        let parentPath;
+        //let parentPath;
       /*  if(href.startsWith('/')){
             parentPath = href;
         }
