@@ -569,7 +569,7 @@
         "valueType": "string",
         "name": "embed_placeholder",
         "label": "Placeholder Image",
-        "multi": true
+        "multi": false
       },
       {
         "component": "text",
@@ -889,7 +889,7 @@
         "valueType": "string"
       },
       {
-        "component": "aem-content",
+        "component": "text",
         "name": "javascript-reference",
         "label": "Javascript Reference",
         "value": "",
@@ -897,7 +897,7 @@
         "multi":true
       },
       {
-        "component": "aem-content",
+        "component": "text",
         "name": "css-reference",
         "label": "Css Reference",
         "value": "",
