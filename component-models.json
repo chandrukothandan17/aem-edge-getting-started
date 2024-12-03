@@ -569,7 +569,7 @@
         "valueType": "string",
         "name": "embed_placeholder",
         "label": "Placeholder Image",
-        "multi": false
+        "multi": true
       },
       {
         "component": "text",
