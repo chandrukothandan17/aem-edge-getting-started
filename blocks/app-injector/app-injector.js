@@ -19,7 +19,7 @@ export default async function decorate(block) {
             loadScriptInsideApp(parentPath+"/js/"+file);
         });
 
-        const cascadefiles = jsfiles.split(',');
+        const cascadefiles = cssfiles.split(',');
         cascadefiles.forEach((file)=>{
             console.log(file);
             loadCSSInsideApp(parentPath+"/css/"+file);
