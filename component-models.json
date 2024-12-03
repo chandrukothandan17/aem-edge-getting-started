@@ -890,6 +890,13 @@
       },
       {
         "component": "text",
+        "name": "parent-path",
+        "label": "Parent Path",
+        "value": "",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
         "name": "javascript-reference",
         "label": "Javascript Reference",
         "value": "",
@@ -902,14 +909,6 @@
         "label": "Css Reference",
         "value": "",
         "valueType": "string",
-        "multi":true
-      },
-      {
-        "component": "number",
-        "name": "div-number",
-        "label": "Div number",
-        "value": "",
-        "valueType": "number",
         "multi":true
       }
     ]
