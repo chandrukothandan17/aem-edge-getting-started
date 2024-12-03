@@ -12,19 +12,18 @@ export default async function decorate(block) {
         const parentPath = rows[1].innerText.trim();
         const jsfiles = rows[2].innerText.trim();
         const cssfiles = rows[3].innerText.trim();
-        console.log(parentPath+" -> "+jsfiles+" -> "+cssfiles);
-        //let parentPath;
-      /*  if(href.startsWith('/')){
-            parentPath = href;
-        }
-        console.log(parentPath);
-        if(href.includes('js')){
-            loadScriptInsideApp(parentPath+"/js/"+href);
-        }
-        if(href.includes('css')){
-            loadCSSInsideApp(parentPath+"/css/"+href);
-        } */
-                    
+       
+        const javascriptfiles = jsfiles.split(',');
+        javascriptfiles.forEach((file)=>{
+            console.log(file);
+            loadScriptInsideApp(parentPath+"/js/"+file);
+        });
+
+        const cascadefiles = jsfiles.split(',');
+        cascadefiles.forEach((file)=>{
+            console.log(file);
+            loadCSSInsideApp(parentPath+"/css/"+file);
+        })                
     
 }
 
