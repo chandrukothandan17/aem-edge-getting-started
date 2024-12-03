@@ -9,7 +9,7 @@ export default async function decorate(block) {
         console.log(row);
         console.log(row.innerText);
         const href = row.innerText;
-       // loadScriptInsideApp(href);
+        loadScriptInsideApp(href);
         
     });
 }
