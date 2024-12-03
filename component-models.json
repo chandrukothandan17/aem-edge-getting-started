@@ -877,5 +877,26 @@
         "value":""
       }
     ]
+  },
+  {
+    "id": "app-injector",
+    "fields": [
+      {
+        "component": "aem-content",
+        "name": "javascript-reference",
+        "label": "Javascript Reference",
+        "value": "",
+        "valueType": "string",
+        "multi":true
+      },
+      {
+        "component": "aem-content",
+        "name": "css-reference",
+        "label": "Css Reference",
+        "value": "",
+        "valueType": "string",
+        "multi":true
+      }
+    ]
   }
 ]
