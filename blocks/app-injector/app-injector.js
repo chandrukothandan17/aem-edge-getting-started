@@ -21,7 +21,7 @@ export default async function decorate(block) {
         loadCSSInsideApp(parentPath + "/css/" + file);
     });
 
-    [..block.children].forEach((rows)=>{
+    [...block.children].forEach((rows)=>{
         rows.remove();
     });
 
