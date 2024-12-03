@@ -882,6 +882,13 @@
     "id": "app-injector",
     "fields": [
       {
+        "component": "text",
+        "name": "div-id",
+        "label": "Div Id",
+        "value": "",
+        "valueType": "string"
+      },
+      {
         "component": "aem-content",
         "name": "javascript-reference",
         "label": "Javascript Reference",
@@ -895,6 +902,14 @@
         "label": "Css Reference",
         "value": "",
         "valueType": "string",
+        "multi":true
+      },
+      {
+        "component": "number",
+        "name": "div-number",
+        "label": "Div number",
+        "value": "",
+        "valueType": "number",
         "multi":true
       }
     ]
