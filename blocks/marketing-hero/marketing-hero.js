@@ -4,7 +4,7 @@ export default async function decorate(block) {
     const rows = block.querySelectorAll(':scope > div');
     createMarketingBlock(rows);
     let link;
-    if(rows.length>8){
+    if(rows.length>=9){
         link = rows[9].innerText.trim();
     }
     const autoplay = block.classList.contains('autoplay');
