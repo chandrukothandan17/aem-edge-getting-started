@@ -229,7 +229,7 @@ const loadVideoEmbedMarketingHero = (block, link, autoplay, background) => {
     }
   
     const temp = document.createElement('div');
-    temp.innerHTML = `<div style="left: 0; width: 50%; height: 0; position: relative; padding-bottom: 56.25%;">
+    temp.innerHTML = `<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;">
         <iframe src="https://www.youtube.com${vid ? `/embed/${vid}?rel=0&v=${vid}${suffix}` : embed}" style="border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;" 
         allow="autoplay; fullscreen; picture-in-picture; encrypted-media; accelerometer; gyroscope; picture-in-picture" allowfullscreen="" scrolling="no" title="Content from Youtube" loading="lazy"></iframe>
       </div>`;
