@@ -155,8 +155,10 @@ const loadVideoEmbedMarketingHero = (block, link, autoplay, background) => {
         console.log("youtube");
       const embedWrapper = embedYoutubeMarketingHero(url, autoplay, background);
       const videFrame = block.querySelector('.iframe-video-container');
+      console.log(embedWrapper);
       console.log(videFrame);
       if(videFrame.length>0){
+        console.log("vide");
         videFrame.appendChild(embedWrapper);
       }
       embedWrapper.querySelector('iframe').addEventListener('load', () => {
