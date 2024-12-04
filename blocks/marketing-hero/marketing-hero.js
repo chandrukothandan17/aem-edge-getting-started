@@ -3,8 +3,10 @@ const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)
 export default async function decorate(block) {
     const rows = block.querySelectorAll(':scope > div');
     createMarketingBlock(rows);
-    const link = rows[9].innerText.trim();
-
+    let link;
+    if(rows.length>8){
+        link = rows[9].innerText.trim();
+    }
     const autoplay = block.classList.contains('autoplay');
     console.log(autoplay);
 
