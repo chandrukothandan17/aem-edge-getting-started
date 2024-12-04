@@ -157,7 +157,7 @@ const loadVideoEmbedMarketingHero = (block, link, autoplay, background) => {
       const videFrame = block.querySelector('.iframe-video-container');
       console.log(embedWrapper);
       console.log(videFrame);
-      if(videFrame.length>0){
+      if(videFrame){
         console.log("vide");
         videFrame.appendChild(embedWrapper);
       }
@@ -235,7 +235,7 @@ const loadVideoEmbedMarketingHero = (block, link, autoplay, background) => {
       </div>`;
     return temp.children.item(0);
   }
-  
+
 
   function embedVimeoMarketingHero(url, autoplay, background) {
     const [, video] = url.pathname.split('/');
