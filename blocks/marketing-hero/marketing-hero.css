@@ -4791,7 +4791,6 @@ strong {
 @media (min-width: 768px) {
     .ups-component.hero .card-img img, .ups-component.hero .card-img video, .ups-component.hero .card-img .iframe-video-container {
         width: calc(100% - 1rem);
-        height: auto;
         position: absolute;
         top: 0;
         z-index: 10;
