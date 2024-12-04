@@ -131,7 +131,7 @@ export default async function decorate(block) {
 
             marketingHeroBlock.append(marketingContainer, arcContainer);
             [...block.children].forEach((row) => {
-               // row.remove();
+                row.remove();
             });
             block.appendChild(marketingHeroBlock);
             console.log(block);
@@ -153,14 +153,13 @@ const loadVideoEmbedMarketingHero = (block, link, autoplay, background) => {
   
     if (isYoutube) {
       const embedWrapper = embedYoutubeMarketingHero(url, autoplay, background);
-      console.log(block.querySelector('.iframe-video-container'))
-      block.append(embedWrapper);
+      block.querySelector('.iframe-video-container')[0].append(embedWrapper);
       embedWrapper.querySelector('iframe').addEventListener('load', () => {
         block.dataset.embedLoaded = true;
       });
     } else if (isVimeo) {
       const embedWrapper = embedVimeoMarketingHero(url, autoplay, background);
-      block.append(embedWrapper);
+      block.querySelector('.iframe-video-container')[0].append(embedWrapper);
       embedWrapper.querySelector('iframe').addEventListener('load', () => {
         block.dataset.embedLoaded = true;
       });
