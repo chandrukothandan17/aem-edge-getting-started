@@ -14,18 +14,18 @@ export default async function decorate(block) {
 
     const javascriptfiles = jsfiles.split(',');
     javascriptfiles.forEach((file) => {
-        //loadScriptInsideApp(parentPath + "/js/" + file);
+        loadScriptInsideApp(`${window.hlx.codeBasePath}`+parentPath+"/js/"+file);
         console.log(`${window.hlx.codeBasePath}`+parentPath+"/js/"+file);
     });
 
     const cascadefiles = cssfiles.split(',');
     cascadefiles.forEach((file) => {
-       // loadCSSInsideApp(parentPath + "/css/" + file);
+        loadCSSInsideApp(`${window.hlx.codeBasePath}`+parentPath+"/css/"+file);
        console.log(`${window.hlx.codeBasePath}`+parentPath+"/css/"+file);
     });
 
     [...block.children].forEach((rows)=>{
-      //  rows.remove();
+        rows.remove();
     });
 
     const divElement = document.createElement('div');
