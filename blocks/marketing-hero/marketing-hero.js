@@ -1,3 +1,5 @@
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
 export default async function decorate(block) {
 
     const rows = block.querySelectorAll(':scope > div');
