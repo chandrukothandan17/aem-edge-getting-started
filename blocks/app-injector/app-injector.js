@@ -10,7 +10,6 @@ export default async function decorate(block) {
     const parentPath = rows[1].innerText.trim();
     const jsfiles = rows[2].innerText.trim();
     const cssfiles = rows[3].innerText.trim();
-    
 
     const javascriptfiles = jsfiles.split(',');
     javascriptfiles.forEach((file) => {
