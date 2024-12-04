@@ -153,19 +153,19 @@ const loadVideoEmbedMarketingHero = (block, link, autoplay, background) => {
   
     if (isYoutube) {
       const embedWrapper = embedYoutubeMarketingHero(url, autoplay, background);
-      block.querySelector('.iframe-video-container')[0].append(embedWrapper);
+      block.querySelector('.iframe-video-container')[0].appendChild(embedWrapper);
       embedWrapper.querySelector('iframe').addEventListener('load', () => {
         block.dataset.embedLoaded = true;
       });
     } else if (isVimeo) {
       const embedWrapper = embedVimeoMarketingHero(url, autoplay, background);
-      block.querySelector('.iframe-video-container')[0].append(embedWrapper);
+      block.querySelector('.iframe-video-container')[0].appendChild(embedWrapper);
       embedWrapper.querySelector('iframe').addEventListener('load', () => {
         block.dataset.embedLoaded = true;
       });
     } else {
       const videoEl = getVideoElementMarketingHero(link, autoplay, background);
-      block.append(videoEl);
+      block.querySelector('.iframe-video-container')[0].appendChild(videoEl);
       videoEl.addEventListener('canplay', () => {
         block.dataset.embedLoaded = true;
       });
