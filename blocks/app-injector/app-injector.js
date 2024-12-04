@@ -10,15 +10,18 @@ export default async function decorate(block) {
     const parentPath = rows[1].innerText.trim();
     const jsfiles = rows[2].innerText.trim();
     const cssfiles = rows[3].innerText.trim();
+    
 
     const javascriptfiles = jsfiles.split(',');
     javascriptfiles.forEach((file) => {
-        loadScriptInsideApp(parentPath + "/js/" + file);
+        //loadScriptInsideApp(parentPath + "/js/" + file);
+        console.log(`${window.hlx.codeBasePath}`+parentPath+"/js/"+file);
     });
 
     const cascadefiles = cssfiles.split(',');
     cascadefiles.forEach((file) => {
-        loadCSSInsideApp(parentPath + "/css/" + file);
+       // loadCSSInsideApp(parentPath + "/css/" + file);
+       console.log(`${window.hlx.codeBasePath}`+parentPath+"/css/"+file);
     });
 
     [...block.children].forEach((rows)=>{
