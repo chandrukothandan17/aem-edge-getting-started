@@ -856,6 +856,30 @@
             "value":"image-without-body-text-cta-ups-dark-brown"
           }
         ]
+      },
+      {
+        "component": "aem-content",
+        "valueType": "string",
+        "name": "videourl",
+        "label": "Video Url"
+      },
+      {
+        "component": "multiselect",
+        "name": "classes",
+        "value": "",
+        "label": "Options",
+        "valueType": "string",
+        "options": [
+          {
+            "name": "Auto Play Option",
+            "children": [
+              {
+                "name": "AutoPlay",
+                "value": "autoplay"
+              }
+            ]
+          }
+        ]
       }
     ]
   },

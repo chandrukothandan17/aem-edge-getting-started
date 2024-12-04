@@ -3,6 +3,9 @@ export default async function decorate(block) {
     const rows = block.querySelectorAll(':scope > div');
     createMarketingBlock(rows);
 
+    const autoplay = block.classList.contains('autoplay');
+    console.log(autoplay);
+
     function createMarketingBlock(rows) {
         if (rows.length > 0) {
             const title = rows[0].innerText;
