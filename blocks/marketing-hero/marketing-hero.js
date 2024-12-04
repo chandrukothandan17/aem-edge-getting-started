@@ -235,6 +235,7 @@ const loadVideoEmbedMarketingHero = (block, link, autoplay, background) => {
       </div>`;
     return temp.children.item(0);
   }
+  
 
   function embedVimeoMarketingHero(url, autoplay, background) {
     const [, video] = url.pathname.split('/');
