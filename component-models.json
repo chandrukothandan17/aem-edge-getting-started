@@ -730,6 +730,7 @@
   },
   {
     "id": "marketing-hero",
+    "classes" :"marketer",
     "fields":[
       {
         "component": "text",
