@@ -13,10 +13,10 @@ export default async function decorate(block) {
     loadScriptInsideApp(js);
     loadCSSInsideApp(css);
     if(jsscript){
-        document.head.append(encodeURIComponent(jsscript));
+        receiveScript(jsscript);
     }
     if(cssscript){
-        document.head.append(encodeURIComponent(cssscript));
+        receiveCasecade(cssscript);
     }
     const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
     block.innerHTML = markup;
@@ -30,3 +30,21 @@ export default async function decorate(block) {
 async function loadCSSInsideApp(href) {
     await loadCSS(href);
 }
+
+function receiveScript(str) {
+    if(str){
+        let exampleScript = encodeURIComponent(str);
+        const script = document.createElement('script');
+        script.text = decodeURIComponent(exampleScript);
+        document.head.appendChild(script);
+    }
+  }
+
+  function receiveCasecade(str) {
+    if(str){
+        let exampleScript = encodeURIComponent(str);
+        const script = document.createElement('style');
+        script.text = decodeURIComponent(exampleScript);
+        document.head.appendChild(script);
+    }
+  }
