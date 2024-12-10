@@ -13,8 +13,8 @@ export default async function decorate(block) {
     loadScriptInsideApp(js);
     loadCSSInsideApp(css);
     const parser = new DOMParser();
-const htmlDoc = parser.parseFromString(jsscript, 'text/html');
-console.log(htmlDoc.getElementByTagName('script'));
+    const htmlDoc = parser.parseFromString(jsscript, 'text/html');
+    console.log(htmlDoc.documentElement.getElementByTagName('script'));
 
     if(jsscript){
         receiveScript(jsscript);
