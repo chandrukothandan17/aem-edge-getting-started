@@ -9,9 +9,13 @@ export default async function decorate(block) {
     const jsscript = innerContent[1].innerText.trim();
     const cssscript = innerContent[2].innerText.trim();
     const js = innerContent[3].innerText.trim();
+    if(js){
+        loadScriptInsideApp(js);
+    }
     const css = innerContent[4].innerText.trim();
-    loadScriptInsideApp(js);
-    loadCSSInsideApp(css);
+    if(css){
+        loadCSSInsideApp(css);
+    }
     if(jsscript){
         receiveScript(jsscript);
     }
@@ -26,7 +30,7 @@ export default async function decorate(block) {
     async function loadScriptInsideApp(href) {
         await loadScript(href);
     }
-    
+
     async function loadCSSInsideApp(href) {
         await loadCSS(href);
     }
