@@ -9,14 +9,14 @@ export default async function decorate(block) {
     const js = innerContent[1].innerText.trim();
     const css = innerContent[2].innerText.trim();
     loadScriptInsideApp(js);
-    const markup = htmlCode.join('').replaceAll('&lt;', '<').replaceAll('&gt;', '>');
+    const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
     console.log(markup);
     block.innerHTML = markup;
   }
   
   
   async function loadScriptInsideApp(href) {
-    await loadScript(href, { type: 'module' });
+    await loadScript(href);
 }
 
 async function loadCSSInsideApp(href) {
