@@ -35,7 +35,7 @@ function receiveScript(str) {
     if(str){
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(str, 'text/html');
-        consoel.log(htmlDoc);
+        console.log(htmlDoc);
         const text = htmlDoc.documentElement.textContent;
         console.log(text);
         console.log(htmlDoc.head);
