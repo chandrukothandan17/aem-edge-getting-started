@@ -5,11 +5,20 @@ import {
 
 export default async function decorate(block) {
     const innerContent = block.querySelectorAll(':scope > div > div');
-    console.log(innerContent[0].innerHTML);
-    console.log(innerContent[1].innerText);
-    const markup = [...innerContent].map((el) => el.textContent).join('').replaceAll('&lt;', '<').replaceAll('&gt;', '>');
+    const htmlCode = innerContent[0].innerHTML.trim();
+    const js = innerContent[1].innerText.trim();
+    const css = innerContent[2].innerText.trim();
+    loadScriptInsideApp(js);
+    const markup = htmlCode.join('').replaceAll('&lt;', '<').replaceAll('&gt;', '>');
     console.log(markup);
     block.innerHTML = markup;
   }
   
   
+  async function loadScriptInsideApp(href) {
+    await loadScript(href, { type: 'module' });
+}
+
+async function loadCSSInsideApp(href) {
+    await loadCSS(href);
+}
