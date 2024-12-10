@@ -937,5 +937,33 @@
         "multi":true
       }
     ]
+  },
+  {
+    "id": "html-embed",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "html",
+        "label": "Embed HTML",
+        "value": "",
+        "valueType": "string"
+      },        
+      {
+        "component": "aem-content",
+        "name": "js",
+        "label": "Embed JavaScript",
+        "value": "",
+        "valueType": "string",
+        "multi": true
+      },
+      {
+        "component": "aem-content",
+        "name": "css",
+        "label": "Embed CSS",
+        "value": "",
+        "valueType": "string",
+        "multi": true
+      }
+    ]
   }
 ]
