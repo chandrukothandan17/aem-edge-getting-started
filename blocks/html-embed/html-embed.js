@@ -41,7 +41,7 @@ function receiveScript(str) {
         console.log(htmlDoc.head);
         //const script = document.createElement('script');
        // script.innerHtml = htmlDoc;
-      //  document.head.appendChild(htmlDoc);
+       document.head.appendChild(htmlDoc.head.firstChild);
     }
   }
 
