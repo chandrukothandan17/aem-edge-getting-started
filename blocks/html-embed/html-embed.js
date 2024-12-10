@@ -37,8 +37,8 @@ function receiveScript(str) {
         const htmlDoc = parser.parseFromString(str, 'text/html');
         const text = htmlDoc.documentElement.textContent;
         const script = document.createElement('script');
-        script.innerHtml = text;
-        document.head.appendChild(script);
+        script.innerHtml = htmlDoc;
+        document.head.appendChild(htmlDoc);
     }
   }
 
