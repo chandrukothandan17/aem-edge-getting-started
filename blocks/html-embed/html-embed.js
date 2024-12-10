@@ -39,8 +39,6 @@ function receiveScript(str) {
         const text = htmlDoc.documentElement.textContent;
         console.log(text);
         const scriptChild = htmlDoc.head.firstChild;
-        //const script = document.createElement('script');
-       // script.innerHtml = htmlDoc;
        document.head.appendChild(scriptChild);
     }
   }
@@ -49,9 +47,10 @@ function receiveScript(str) {
     if(str){
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(str, 'text/html');
+        console.log(htmlDoc);
         const text = htmlDoc.documentElement.textContent;
-        const style = document.createElement('style');
-        style.innerHtml = text;
-        document.head.appendChild(style);
+        console.log(text);
+        const cssChild = htmlDoc.head.firstChild;
+       document.head.appendChild(cssChild);
     }
   }
