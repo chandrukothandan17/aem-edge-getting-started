@@ -18,10 +18,9 @@ export default async function decorate(block) {
     if(cssscript){
         receiveCasecade(cssscript);
     }
-    //const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
-    const parser = new DOMParser();
-    const htmlDoc = parser.parseFromString(htmlCode, 'text/html');
-    console.log(htmlDoc);
+    console.log(htmlCode);
+    const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
+    console.log(markup);
     block.innerHTML = htmlDoc.body.firstChild;
   }
   
