@@ -36,9 +36,9 @@ function receiveScript(str) {
         let exampleScript = encodeURIComponent(str);
         console.log(exampleScript);
         const script = document.createElement('script');
-        console.log(script)
         script.text = decodeURIComponent(exampleScript);
-        console.log(text);
+        console.log(script.text);
+        console.log(script);
         document.head.appendChild(script);
     }
   }
