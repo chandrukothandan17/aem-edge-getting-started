@@ -35,10 +35,13 @@ function receiveScript(str) {
     if(str){
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(str, 'text/html');
+        consoel.log(htmlDoc);
         const text = htmlDoc.documentElement.textContent;
-        const script = document.createElement('script');
-        script.innerHtml = htmlDoc;
-        document.head.appendChild(htmlDoc);
+        console.log(text);
+        console.log(htmlDoc.head);
+        //const script = document.createElement('script');
+       // script.innerHtml = htmlDoc;
+      //  document.head.appendChild(htmlDoc);
     }
   }
 
