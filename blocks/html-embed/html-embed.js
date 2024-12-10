@@ -18,7 +18,6 @@ export default async function decorate(block) {
     if(cssscript){
         receiveCasecade(cssscript);
     }
-    console.log(htmlCode);
     const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
     console.log(markup);
     block.innerHTML = markup;
@@ -27,7 +26,7 @@ export default async function decorate(block) {
     async function loadScriptInsideApp(href) {
         await loadScript(href);
     }
-
+    
     async function loadCSSInsideApp(href) {
         await loadCSS(href);
     }
