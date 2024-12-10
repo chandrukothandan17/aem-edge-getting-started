@@ -12,11 +12,6 @@ export default async function decorate(block) {
     const css = innerContent[4].innerText.trim();
     loadScriptInsideApp(js);
     loadCSSInsideApp(css);
-    const parser = new DOMParser();
-    const htmlDoc = parser.parseFromString(jsscript, 'text/html');
-    console.log(htmlDoc.documentElement.textContent);
-    console.log(htmlDoc.documentElement.getElementByTagName('script'));
-
     if(jsscript){
         receiveScript(jsscript);
     }
@@ -38,21 +33,22 @@ async function loadCSSInsideApp(href) {
 
 function receiveScript(str) {
     if(str){
-        let exampleScript = encodeURIComponent(str);
-        console.log(exampleScript);
+        const parser = new DOMParser();
+        const htmlDoc = parser.parseFromString(jsscript, 'text/html');
+        const text = htmlDoc.documentElement.textContent;
         const script = document.createElement('script');
-        script.text = decodeURIComponent(exampleScript);
-        console.log(script.text);
-        console.log(script);
-        document.head.appendChild(script.text);
+        script.text = text;
+        document.head.appendChild(script);
     }
   }
 
   function receiveCasecade(str) {
     if(str){
-        let exampleScript = encodeURIComponent(str);
-        const script = document.createElement('style');
-        script.text = decodeURIComponent(exampleScript);
-        document.head.appendChild(script);
+        const parser = new DOMParser();
+        const htmlDoc = parser.parseFromString(jsscript, 'text/html');
+        const text = htmlDoc.documentElement.textContent;
+        const style = document.createElement('style');
+        style.text = text;
+        document.head.appendChild(style);
     }
   }
