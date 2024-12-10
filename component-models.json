@@ -947,7 +947,21 @@
         "label": "Embed HTML",
         "value": "",
         "valueType": "string"
-      },        
+      },  
+      {
+        "component": "richtext",
+        "name": "js-script",
+        "label": "JS Script",
+        "value": "",
+        "valueType": "string"
+      },  
+      {
+        "component": "richtext",
+        "name": "cs-script",
+        "label": "Css Script",
+        "value": "",
+        "valueType": "string"
+      },      
       {
         "component": "aem-content",
         "name": "js",
