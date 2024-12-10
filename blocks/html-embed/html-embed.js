@@ -38,8 +38,6 @@ export default async function decorate(block) {
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(str, 'text/html');
         console.log(htmlDoc);
-        const text = htmlDoc.documentElement.textContent;
-        console.log(text);
         const scriptChild = htmlDoc.head.firstChild;
        document.head.appendChild(scriptChild);
     }
@@ -50,9 +48,7 @@ export default async function decorate(block) {
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(str, 'text/html');
         console.log(htmlDoc);
-        const text = htmlDoc.documentElement.textContent;
-        console.log(text);
         const cssChild = htmlDoc.body.firstChild;
-       document.head.appendChild(cssChild);
+       document.body.appendChild(cssChild);
     }
   }
