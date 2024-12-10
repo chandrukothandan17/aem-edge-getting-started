@@ -38,10 +38,10 @@ function receiveScript(str) {
         console.log(htmlDoc);
         const text = htmlDoc.documentElement.textContent;
         console.log(text);
-        console.log(htmlDoc.head.firstChild);
+        const scriptChild = htmlDoc.head.firstChild;
         //const script = document.createElement('script');
        // script.innerHtml = htmlDoc;
-      // document.head.appendChild(htmlDoc.head.firstChild);
+       document.head.appendChild(scriptChild);
     }
   }
 
