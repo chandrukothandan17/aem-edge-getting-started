@@ -21,7 +21,7 @@ export default async function decorate(block) {
     console.log(htmlCode);
     const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
     console.log(markup);
-    block.innerHTML = htmlDoc.body.firstChild;
+    block.innerHTML = markup;
   }
   
     async function loadScriptInsideApp(href) {
