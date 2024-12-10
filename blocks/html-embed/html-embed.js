@@ -25,8 +25,7 @@ export default async function decorate(block) {
     block.innerHTML = markup;
   }
   
-  -
-  async function loadScriptInsideApp(href) {
+async function loadScriptInsideApp(href) {
     await loadScript(href);
 }
 
@@ -34,7 +33,7 @@ async function loadCSSInsideApp(href) {
     await loadCSS(href);
 }
 
-function receiveScript(str) {
+  function receiveScript(str) {
     if(str){
         const parser = new DOMParser();
         const htmlDoc = parser.parseFromString(str, 'text/html');
