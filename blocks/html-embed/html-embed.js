@@ -34,8 +34,11 @@ async function loadCSSInsideApp(href) {
 function receiveScript(str) {
     if(str){
         let exampleScript = encodeURIComponent(str);
+        console.log(exampleScript);
         const script = document.createElement('script');
+        console.log(script)
         script.text = decodeURIComponent(exampleScript);
+        console.log(text);
         document.head.appendChild(script);
     }
   }
