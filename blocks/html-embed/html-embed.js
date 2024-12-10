@@ -34,7 +34,7 @@ async function loadCSSInsideApp(href) {
 function receiveScript(str) {
     if(str){
         const parser = new DOMParser();
-        const htmlDoc = parser.parseFromString(jsscript, 'text/html');
+        const htmlDoc = parser.parseFromString(str, 'text/html');
         const text = htmlDoc.documentElement.textContent;
         const script = document.createElement('script');
         script.text = text;
@@ -45,7 +45,7 @@ function receiveScript(str) {
   function receiveCasecade(str) {
     if(str){
         const parser = new DOMParser();
-        const htmlDoc = parser.parseFromString(jsscript, 'text/html');
+        const htmlDoc = parser.parseFromString(str, 'text/html');
         const text = htmlDoc.documentElement.textContent;
         const style = document.createElement('style');
         style.text = text;
