@@ -19,7 +19,7 @@ export default async function decorate(block) {
         receiveCasecade(cssscript);
     }
     //const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
-   // const parser = new DOMParser();
+    const parser = new DOMParser();
     const htmlDoc = parser.parseFromString(markup, 'text/html');
     console.log(htmlDoc);
     block.innerHTML = htmlDoc;
