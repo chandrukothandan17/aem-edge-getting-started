@@ -14,7 +14,7 @@ export default async function decorate(block) {
     loadCSSInsideApp(css);
     const parser = new DOMParser();
 const htmlDoc = parser.parseFromString(jsscript, 'text/html');
-console.log(htmlDoc);
+console.log(htmlDoc.getElementByTagName('script'));
 
     if(jsscript){
         receiveScript(jsscript);
