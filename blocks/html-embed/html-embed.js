@@ -18,7 +18,7 @@ export default async function decorate(block) {
     if(cssscript){
         receiveCasecade(cssscript);
     }
-    const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp;','');
+    const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
     block.innerHTML = markup;
   }
   
