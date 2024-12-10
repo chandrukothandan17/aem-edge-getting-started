@@ -13,10 +13,10 @@ export default async function decorate(block) {
     loadScriptInsideApp(js);
     loadCSSInsideApp(css);
     if(jsscript){
-        document.head.append(jsscript);
+        document.head.append(eval(jsscript));
     }
     if(cssscript){
-        document.head.append(cssscript);
+        document.head.append(eval(cssscript));
     }
     const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
     block.innerHTML = markup;
