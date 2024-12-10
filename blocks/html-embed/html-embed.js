@@ -22,7 +22,7 @@ export default async function decorate(block) {
     const parser = new DOMParser();
     const htmlDoc = parser.parseFromString(htmlCode, 'text/html');
     console.log(htmlDoc);
-    block.innerHTML = htmlDoc;
+    block.innerHTML = htmlDoc.body.firstChild;
   }
   
     async function loadScriptInsideApp(href) {
