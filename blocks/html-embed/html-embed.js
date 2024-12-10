@@ -12,8 +12,8 @@ export default async function decorate(block) {
     const css = innerContent[4].innerText.trim();
     loadScriptInsideApp(js);
     loadCSSInsideApp(css);
-    if(jssscript){
-        document.head.append(jssscript);
+    if(jsscript){
+        document.head.append(jsscript);
     }
     if(cssscript){
         document.head.append(cssscript);
