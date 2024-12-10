@@ -18,20 +18,20 @@ export default async function decorate(block) {
     if(cssscript){
         receiveCasecade(cssscript);
     }
-    const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
-    const parser = new DOMParser();
+    //const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>').replaceAll('&nbsp; ','');
+   // const parser = new DOMParser();
     const htmlDoc = parser.parseFromString(markup, 'text/html');
     console.log(htmlDoc);
-    block.innerHTML = markup;
+    block.innerHTML = htmlDoc;
   }
   
-async function loadScriptInsideApp(href) {
-    await loadScript(href);
-}
+    async function loadScriptInsideApp(href) {
+        await loadScript(href);
+    }
 
-async function loadCSSInsideApp(href) {
-    await loadCSS(href);
-}
+    async function loadCSSInsideApp(href) {
+        await loadCSS(href);
+    }
 
   function receiveScript(str) {
     if(str){
@@ -52,7 +52,7 @@ async function loadCSSInsideApp(href) {
         console.log(htmlDoc);
         const text = htmlDoc.documentElement.textContent;
         console.log(text);
-        const cssChild = htmlDoc.head.firstChild;
+        const cssChild = htmlDoc.body.firstChild;
        document.head.appendChild(cssChild);
     }
   }
