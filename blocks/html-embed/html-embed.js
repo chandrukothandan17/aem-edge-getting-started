@@ -39,7 +39,7 @@ function receiveScript(str) {
         script.text = decodeURIComponent(exampleScript);
         console.log(script.text);
         console.log(script);
-        document.head.appendChild(script);
+        document.head.appendChild(script.text);
     }
   }
 
