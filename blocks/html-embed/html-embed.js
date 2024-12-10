@@ -9,9 +9,8 @@ export default async function decorate(block) {
     const js = innerContent[1].innerText.trim();
     const css = innerContent[2].innerText.trim();
     loadScriptInsideApp(js);
-    console.log(htmlCode);
     const markup = htmlCode.replaceAll('&lt;', '<').replaceAll('&gt;', '>');
-    console.log(markup);
+    console.log(markup.getElementsByTagName('script'));
     block.innerHTML = markup;
   }
   
