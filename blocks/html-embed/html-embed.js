@@ -37,7 +37,7 @@ function receiveScript(str) {
         const htmlDoc = parser.parseFromString(str, 'text/html');
         const text = htmlDoc.documentElement.textContent;
         const script = document.createElement('script');
-        script.text = text;
+        script.innerHtml = text;
         document.head.appendChild(script);
     }
   }
@@ -48,7 +48,7 @@ function receiveScript(str) {
         const htmlDoc = parser.parseFromString(str, 'text/html');
         const text = htmlDoc.documentElement.textContent;
         const style = document.createElement('style');
-        style.text = text;
+        style.innerHtml = text;
         document.head.appendChild(style);
     }
   }
